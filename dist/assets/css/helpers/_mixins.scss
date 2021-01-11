@@ -1,0 +1,12 @@
+@mixin darkGradient01 {
+	background: #000000;
+	background: -webkit-linear-gradient(to bottom, #434343, #000000);
+	background: linear-gradient(to bottom, #434343, #000000); 
+}
+
+@mixin darkBlueGradient01  {
+	background: #4B79A1;  
+	background: -webkit-linear-gradient(to bottom, #283E51, #4B79A1);
+	background: linear-gradient(to bottom, #283E51, #4B79A1);	
+}
+

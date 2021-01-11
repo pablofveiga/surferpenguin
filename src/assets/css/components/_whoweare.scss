@@ -1,5 +1,25 @@
 .whoWeAre {
 
 	height: calc(100vh -  #{$headerHeight});
-	background-color: red;
+	// background-color: #000;
+	@include darkGradient01;
+
+	&__header {
+
+		&__title {
+			color: #fff;
+		}
+	}
+}
+
+
+.ourProducts {
+	@include darkBlueGradient01;
+	
+	&__header {
+
+		&__title {
+			// color: #fff;
+		}
+	}	
 }

@@ -1,6 +1,6 @@
 // VARIABLES:
 $headerBG: #d29139;
-$headerHeight: 264px;
+$headerHeight: 310px;
 $logoMobileDim: 90px;
 $logoDesktopDim: 180px;
 
@@ -18,12 +18,36 @@ $logoDesktopDim: 180px;
     background-color: $headerBG;
     background: url("../pics/black-linen.png"),linear-gradient(to top, #e69d06, #ff6c44);
 
+    @media (min-width: $mobileBreakpoint) {
+    	height: $headerHeight;
+    }
+
+
+    &__nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 12px 7px;
+		box-shadow: 0 0px 9px 0px rgba(0, 0, 0, 0.47);
+
+    	&__item {
+			font-family: 'Optician-Sans';
+			color: #fff;
+			font-size: 24px;
+
+			&.active,
+			&:hover {
+			    color: #6cbdff;
+			}
+    	}
+    }
+
+
 	&__info {
 		// background: url(../pics/headerbg.jpg) center/cover no-repeat transparent;
 		display: flex;
 
 		@media (min-width: $mobileBreakpoint) {
-			height: $headerHeight;
+			// height: $headerHeight;
 		}
 
 
@@ -31,7 +55,7 @@ $logoDesktopDim: 180px;
 			@include logoDimension;
 		    align-self: center;
 		    margin-left: auto;
-		    
+
 			&__img {
 				@include logoDimension;
 			}
