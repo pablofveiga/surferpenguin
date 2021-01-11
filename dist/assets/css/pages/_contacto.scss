@@ -1,0 +1,299 @@
+.psContact {
+	display: flex;
+	text-align: left;
+	justify-content: space-between;
+	margin: 3em 0 1em;
+	flex-wrap: wrap;
+
+	@media (min-width: $mobileBreakpoint) {
+		margin: 3em 0 4em;
+	}
+
+	&__item {
+		flex-basis: 100%;
+		margin: 0 0 40px;
+
+		@media (min-width: $mobileBreakpoint) {
+			flex-basis: 48%;
+			margin: 0;
+		}
+
+
+		&__title {
+			text-align: center;
+			font-size: 19px;
+			font-weight: bold;
+			text-decoration: underline;
+		    margin: 0 0 8px;
+		}
+
+		&__subtitle {
+			font-size: 16px;
+			margin: 16px 0;
+
+			a {
+
+		    	&:before {
+		    		content: "";
+					background: url("../pics/gmailicon.png") center/contain no-repeat transparent;
+					width: 20px;
+					height: 20px;
+					display: inline-block;
+					vertical-align: middle;
+					margin: 0 5px 0 0;
+		    	}				
+			}
+
+
+
+		}
+
+		&__form {
+
+			&__details {
+
+				&__item {
+					display: flex;
+					flex-direction: column;
+					margin: 0 0 10px;
+
+					label {}
+					span {}
+					input {}
+				}
+			}
+
+			&__textArea {
+				display: flex;
+				flex-direction: column;
+				margin: 0 0 10px;				
+			}
+		}
+
+		&__timetable {
+			margin: 10px 0;
+
+			&_time {}
+			&_note {
+				font-size: 14px;
+				font-style: italic;
+			}
+		}
+
+		&__phones {
+			margin: 14px 0 16px;
+
+			&__whatsapp {
+				font-size: 14px;
+				line-height: 25px;
+				margin: 3px 0;
+
+				&:before {
+					content: "";
+					background: url(/assets/pics/whatsappicon.png) center/contain no-repeat transparent;
+					display: inline-block;
+					width: 25px;
+					height: 25px;
+					vertical-align: middle;
+					margin: 0 5px 0 0;
+				}				
+			}
+
+			&__telephone {
+				font-size: 14px;
+				line-height: 25px;
+				margin: 3px 0;
+
+
+				&:before {
+					content: "";
+					background: url(/assets/pics/phone.png) center/contain no-repeat transparent;
+					display: inline-block;
+					width: 25px;
+					height: 25px;
+					vertical-align: middle;
+					margin: 0 5px 0 0;
+				}
+			}
+		}
+
+		&__map {
+		    margin: 20px auto 0;
+
+			&__iframe {
+				max-width: 100%;
+			}
+
+			&__address {
+
+				&__line {
+					font-size: 13px;
+				}
+			}
+		}
+
+		&--right {
+			text-align: center;
+		}
+	}
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;	
+
+	&__container {
+
+		&__item {
+		    display: flex;
+    		flex-direction: column;
+    		margin: 0 0 12px;
+
+			&__label {
+			    margin: 10px 0 0;
+			}
+			&__input {
+				background-color: transparent;
+				border: 0;
+				border-bottom: 1px solid;
+				&.message {
+					background-color: #fff;
+					border: 0;
+					min-height: 170px;
+					border-radius: 4px;
+					margin: 10px 0 0;
+
+					@media (min-width: $mobileBreakpoint) {
+						min-height: 250px;
+					}
+				}
+			}
+
+			&.legalItem {
+			    flex-direction: row;
+
+			    label {
+					font-size: 14px;
+					padding-left: 4px;
+			    }
+			}
+			&.message {
+				margin: 30px 0 16px;
+			}
+		}
+	}
+
+	&__CTA {
+		margin: auto;
+		padding: 4px 8px;
+		border: 0;
+		border-radius: 4px;
+		cursor: pointer;
+		color: $gray02;
+
+		&:hover {
+		    box-shadow: 0 0 2px;
+		}
+	}
+
+	&__result {
+
+		&__loader {}
+		&__msg {}
+	}
+
+	@at-root .sentMsg {
+		opacity: 0;
+		width: 0;
+		height: 0;
+		overflow: hidden;
+		transition: all 0.5s ease-in;
+		
+		p {
+		    margin: 0.25em 0;
+		    color: green;
+		    font-size: 1.2em;			
+		}
+
+		&.visible {
+			opacity: 1;
+			width: auto;
+			height: auto;	
+			transition: all 0.5s ease-in;	
+		}
+	}
+
+	@at-root .inputError {
+	    position: absolute;
+	    right: 50%;
+	    color: red;
+	    line-height: 1.65em;
+
+	    &.msgError {
+	    	padding-top: 5%;
+	    }
+	    @media (max-width: $mobileBreakpoint) {    	
+		    font-size: 0.86em;
+		    line-height: 2em;
+		    right: 3em;
+	    }
+	}
+}
+
+
+
+//  AJAX Gif y mensajes de exito o fracaso
+#contactResponse {
+    // position: absolute;
+    display: flex;
+    // right: 1em;
+    // bottom: 5%;
+    align-items: center;
+
+	.hide{
+	    display: none;
+	}
+	.ajaxgif{
+		width: 16px;
+    	height: 16px;
+	}
+	.msg{
+		color: white;
+		margin-left: 5px;
+		padding: 3px 5px;
+		font-size: 0.85em;
+	}
+	.msg_ok{
+	    background: #589D05;
+	}
+	.msg_error{
+	    background: red;
+	}
+}
+
+// HIDE PART OF THE FOOTER
+@media (max-width: $mobileBreakpoint) {
+	#contacto .psFooter,
+	#contact .psFooter {
+		display: none;
+	}	
+	#contacto .psSubFooter,
+	#contact .psSubFooter {
+		padding: 20px 0 14px;
+	}
+}
+
+
+
+
+// .expanded-input-text {
+//     display: none;
+// }
+// .dinamic-input {
+//     width: 150px;
+//     min-width: 150px;
+//     background-color: transparent;
+//     border: 0;
+//     border-bottom: 1px solid;
+//     margin: 0 0 14px;
+// }

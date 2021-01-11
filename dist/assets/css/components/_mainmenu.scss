@@ -1,0 +1,325 @@
+.main-menu {
+
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: $secondary-color;
+
+	@media all and (max-width: 723px) {
+    	overflow-x: hidden;
+	}
+
+	ul {
+		text-align: justify;
+	    padding: 0 30px;
+		margin: auto;
+	
+		li {
+			display: inline-block;
+			border: 5px solid transparent;
+			margin: 10px 0;
+
+			a {
+				display: block;
+				position: relative;
+				font-family: $font01;
+				color: $gray03;
+				text-transform: lowercase;
+
+				.menu-text {
+					position: absolute;
+					bottom: -25px;
+					left: 0;
+					width: 100%;
+					text-align: center;
+
+					&.nosotros,
+					&.filmography {
+						left: -3px;
+					}
+
+				}
+			}
+
+			&:hover,
+			&.active {
+				border-color: $orange01;
+
+				.menu-text {
+					color: $orange01;
+				}
+
+			}
+
+			&:hover .menu-image {
+
+				$dim: -76px;				
+
+				&.nosotros {
+					background-position: 0 0;
+				}
+				&.atrezzo {
+					background-position: $dim 0;
+				}
+				&.diseno {
+					background-position: 2*$dim  0;
+				}
+				&.filmografia {
+					background-position: 3*$dim  0;
+				}
+				&.tapiceria {
+					background-position: 5*$dim  0;
+				}				
+				&.contacto {
+					background-position: 4*$dim  0;
+				}
+
+				transition: all 1s ease;
+			}
+
+
+			&.active .menu-image {
+
+				$dim: -76px;				
+
+				&.nosotros {
+					background-position: 0 0;
+				}
+				&.atrezzo {
+					background-position: $dim 0;
+				}
+				&.diseno {
+					background-position: 2*$dim  0;
+				}
+				&.filmografia {
+					background-position: 3*$dim  0;
+				}
+				&.tapiceria {
+					background-position: 5*$dim  0;
+				}					
+				&.contacto {
+					background-position: 4*$dim  0;
+				}
+
+				// transition: all 1s ease;
+			}
+
+			&.idioma {
+	    		border: 2px solid white;   				
+				border-radius: 30%;
+			    margin-left: -105px;
+			    margin-right: -29px;
+			    vertical-align: top;
+			    margin-top: 24px;
+
+			    a {
+			    	padding: 6px;
+			    	font-size: 14px;
+			    	letter-spacing: 0.2px;
+			    	text-transform: none;
+			    }
+
+				&:hover {
+					border-color: $orange01;
+					background-color: $gray01;					
+					a {
+						color: $orange01;
+					}
+
+					transition: all 0.4s ease;
+				}
+			}
+		}
+
+
+		&:after {
+			content: "";
+			width: 100%;
+			text-align: justify;
+			display: inline-block;
+		}
+	}
+
+	p.selector-idioma {
+	    position: absolute;
+	    right: 10px;
+		// bottom: -30px;
+		padding-top: 12px;
+	    font-family: $font01;
+	    font-size: 13px;
+	    opacity: 0;
+	    visibility: hidden;
+	    transition: all 0.5s ease;
+
+    	a {
+    		svg {
+			    width: 35px;
+			    display: inline-block;
+			    height: 17px;
+			    vertical-align: middle;
+    		}
+    		&:hover {
+    			color: $orange01;
+
+    			span {
+    				text-decoration: underline;
+    			}
+    		}
+
+    		&.ghost-magazine {
+				display: none;
+				padding: 2px 0 7px;
+
+    			.icon {
+				    display: inline-block;
+				    background: transparent url(../pics/magazine.svg) no-repeat scroll;
+				    width: 25px;
+				    background-size: 100% 100%;
+				    height: 23px;
+				    vertical-align: middle;    				
+    			}
+
+    			@media all and (max-width: 723px) {
+    				display: block;
+    			}
+    		}
+    	}
+
+    	span {
+	    	&.uk-flag {
+		    	background: rgba(0, 0, 0, 0) url("../pics/uk-flag.png") no-repeat scroll;
+			}
+	    	&.sp-flag {
+		    	background: rgba(0, 0, 0, 0) url("../pics/spain-flag.png") no-repeat scroll;
+			}
+    	}
+
+		&.desvanece {			
+			opacity: 1;
+			visibility: visible;
+		}	
+
+	}
+
+
+}
+p.magazine {
+    position: absolute;
+    left: 6px;
+    bottom: -30px;
+
+    span.icon { 
+    	display: inline-block; 
+    	background: transparent url("../pics/magazine.svg") no-repeat scroll; 
+    	width: 25px; 
+	    background-size: 100% 100%;
+	    height: 23px;
+	    vertical-align: middle;
+    }
+    span.text { 
+    	display: inline-block; 
+    	vertical-align: middle;
+    }
+
+    &:hover {
+    	.text {
+    		text-decoration: underline;
+    		color: $orange01;
+    	}
+    }
+
+    &.active {
+    	.text {
+    		color: $orange01;
+    	}
+    }
+
+    @media all and (max-width: 723px) {
+    	display: none;
+    }
+}
+
+.menu-image {
+	width: 76px;
+	height: 76px;
+	display: block;
+
+	background: rgba(0, 0, 0, 0) url("../pics/iconos-menu.png") no-repeat scroll;
+
+	$dim: -76px;
+
+	&.nosotros {
+		background-position: 0 $dim;
+	}
+	&.atrezzo {
+		background-position: $dim $dim;
+	}
+	&.diseno {
+		background-position: 2*$dim  $dim;
+	}
+	&.filmografia {
+		background-position: 3*$dim  $dim;
+	}
+	&.tapiceria {
+		background-position: 5*$dim  $dim;
+	}
+
+	&.contacto {
+		background-position: 4*$dim  $dim;
+	}
+}
+
+.menu-image.magazine {
+	background: rgba(0, 0, 0, 0) url("../pics/magazine.svg") no-repeat scroll;
+	background-size: 100% 100%;
+}
+
+// POSIBLES QUERIES PARA IDIOMAS  -- QUITAR FONDO NEGRO 
+@media screen and (max-width: 723px) {
+	.main-menu p.selector-idioma {
+		background-color: $secondary-color;
+		position: relative;
+		right: 0;
+	}
+
+	p.selector-idioma a {
+	    display: block;
+	    width: 100%;
+	    margin: 14px 0;
+	    // padding: 6px 9px;
+	}
+}
+
+// ====== TRANSLATIONS IN HEADERS ADJUSTMENTS ======
+#rus-menu {
+	.menu-text.filmography {
+		left: -19px;
+	}
+}
+// LONG TRANSLATION ISSUES
+html[lang="fr"] {
+
+	.main-menu li.diseno .menu-text {
+		width: 183px;
+		left: -52px;
+		bottom: -33px;
+	}
+	.main-menu li.nosotros .menu-text {
+		width: 85px;
+		bottom: -32px;
+	}
+
+}
+html[lang="it"] {
+
+	.main-menu li.atrezzo .menu-text {
+		width: 117px;
+		left: -19px;
+		bottom: -27px;
+	}
+	.main-menu li.diseno .menu-text {
+		bottom: -35px;
+	}
+
+}
+
