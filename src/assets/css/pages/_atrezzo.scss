@@ -1,0 +1,379 @@
+$atrezzoVpBreakPoint: 769px;
+
+.atzIntroSection {
+	display: flex;
+	flex-direction: column;
+
+
+
+	@media (min-width: $atrezzoVpBreakPoint) {
+		flex-direction: row;
+	}
+}
+
+.mobileAtHeader {
+    font-size: 1.4em;
+    // margin-bottom: 0.5em;
+    margin: 1em 0;
+    padding: 4px 0;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+
+	@media (min-width: $atrezzoVpBreakPoint) {
+		display: none;
+	}
+}
+
+.desktopAtHeader {
+	@media (max-width: $atrezzoVpBreakPoint) {
+		display: none;
+	}	
+}
+
+
+
+$atSidebarWidth: 260px;
+
+.atrezzoSelector {
+	min-width: $atSidebarWidth;
+	// margin-right: 30px;
+	text-align: left;
+	padding: 8px 8px 16px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 2px;
+    min-height: 560px;
+
+	&__header {
+		position: relative;
+		border-bottom: 2px solid;
+		padding-bottom: 3px;
+
+		&__title {
+
+			a {
+			    font-size: 26px;
+			    font-weight: bold;
+			    color: $gray02;
+
+			    &:hover {
+			    	color: #000;
+			    }				
+			}
+
+		    // CONFUSION DE TITLES
+		    @media(min-width: $atrezzoVpBreakPoint) and (max-width: $mobileBreakpoint) {
+				// text-align: right;º
+				font-weight: bold;
+				font-size: 18px;
+				border-bottom: 2px solid;
+				padding-bottom: 7px;
+				margin-bottom: 26px;		    	
+		    }
+		}
+
+		&__info {
+			position: absolute;
+			right: 1px;
+			top: 6px;
+			font-size: 13px;
+			color: $gray02;
+
+		    &:hover {
+		    	background-color: $green01;
+		    }
+		}
+
+
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+
+		&__item {
+		    // margin: 3px 0;
+		    border-bottom: 1px dashed;
+		    padding: 5px 0 5px 12px;
+		    color: $gray02;
+
+		    &:hover,
+		    &.active {
+	    	    background-color: $green02;
+    			font-weight: bold;
+    			color: $white01;
+
+    			&:before {
+    				opacity: 1;
+    			}
+		    }
+
+		    &:before {
+				content: "";
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				vertical-align: middle;
+				margin-right: 7px;
+				opacity: 0.75;
+		    }
+
+		    &.armeria {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/armeria.png");
+		    	}
+		    }
+		    &.ceramica {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/ceramica.png");
+		    	}
+		    }
+		    &.cesteria {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/cesteria.png");
+		    	}
+		    }
+		    &.cocina {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/cocina.png");
+		    	}
+		    }
+		    &.contemporaneo {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/contemporaneo.png");
+		    	}
+		    }
+		    &.cristaleria {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/cristaleria.png");
+		    	}
+		    }
+		    &.decoracion {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/decoracion.png");
+		    	}
+		    }
+		    &.escritura {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/escritura.png");
+		    	}
+		    }
+		    &.imprenta {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/imprenta.png");
+		    	}
+		    }
+		    &.iluminacion {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/iluminacion.png");
+		    	}
+		    }
+		    &.juegos {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/juegos.png");
+		    	}
+		    }
+		    &.mobiliario {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/mobiliario.png");
+		    	}
+		    }
+		    &.navegacion {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/navegacion.png");
+		    	}
+		    }
+		    &.pintura {
+		    	&:before {
+					background: url("../pics/atrezzo/icons/pintura.png");
+		    	}
+		    }
+		}
+	}
+
+
+	// &.sticky {
+	// 	position: fixed;
+	// 	top: 80px;
+	// }
+
+	@media (min-width: $atrezzoVpBreakPoint) {
+		margin: 0 0 18px;
+	}
+
+	@media (max-width: $mobileBreakpoint) {
+		display: none;
+	}
+	
+}
+
+.mobileAtrezzoSelector {
+    margin: 20px 0 0;
+    
+	select {
+		width: 90%;
+		margin: auto;
+		padding: 6px;
+		border-radius: 5px;
+		color: $black01;
+		font-size: 1.1em;
+
+		option {
+			color: $black01;
+		}		
+	}
+
+
+	@media (min-width: $mobileBreakpoint ) {
+		display: none;
+	}
+}
+
+.atrezzoIntro {
+	margin: 20px 0 0;
+
+	&__header {
+
+		&__title {
+			text-align: center;
+		    font-size: 1.4em;
+		    margin-bottom: 0.5em;
+		    border: 2px solid;
+		    padding: 4px 0;
+
+			@media (min-width: $atrezzoVpBreakPoint) {
+			    text-align: right;
+			    padding-right: 1em;
+			    font-weight: bold;
+			    font-size: 26px;
+			    margin-bottom: 0.5em;
+			    border: 0;
+			    border-bottom: 2px solid;
+			    padding-bottom: 7px;
+			}
+
+
+		    &--mainTitle {
+				text-align: center;
+				border-bottom: 0;
+				font-style: italic;
+		    }	
+
+		}
+	}
+
+	@media (min-width: $atrezzoVpBreakPoint) {
+		margin: 0 0 0 20px;
+	}
+
+	&__content {
+	    text-align: center;
+
+	    &__textBlock {
+	    	p {
+				font-size: 18px;
+				margin: 18px 0;
+				line-height: 20px;	    		
+	    	}
+	    }
+
+	    &__gallery {
+	    	margin: 3em 0;
+
+	    	@media (max-width: $mobileBreakpoint) {
+	    		padding-left: 20px;
+	    	}
+	    }
+	}
+}
+
+.atzHomeGallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	&__item {
+		margin: 6px;
+	    max-width: 40%;
+	    flex-basis: 40%;
+
+		&__target {
+			// width: 220px;
+			max-width: 100%;
+		}
+
+		@media (min-width: $mobileBreakpoint) {
+			max-width: 220px;
+			flex-basis: 220px;
+		}
+	}
+
+	&--big {
+		justify-content: center;
+
+		a {
+		    // flex-basis: 20%;
+		}
+	}
+}
+
+
+.atrezzoGallery {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+
+	@media (min-width: $mobileBreakpoint) {
+		justify-content: flex-start;
+
+	}
+
+	&__item {
+		margin: 4px;
+
+		@media (min-width: $mobileBreakpoint) {
+			display: inline-block;
+			margin: 4px 8px;
+		}
+
+		&__image {
+			box-shadow: 0 0 0px 0.25px #000;
+
+			@media (min-width: $mobileBreakpoint) {
+
+			}			
+		}
+
+		&:hover {
+		    box-shadow: 0 0 8px;
+		}
+	}
+
+	&--centerJustify {
+		justify-content: center;
+		margin: 1em 0;
+	}
+
+	// &.margined {
+	// 	margin-left: 260px;
+	// }
+}
+
+.atzContentSection {
+    margin: 30px 0;
+
+    &__textBlock {
+	    text-align: center;
+    	p {
+			font-size: 18px;
+			margin: 18px 0;
+			line-height: 20px;
+    	}
+    }
+	&.margined {
+		margin-left: 300px;
+	}
+
+}

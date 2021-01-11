@@ -1,0 +1,13 @@
+@mixin normalFont {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+body * {
+  @include normalFont;
+}
+
+
+
+@font-face {font-family: "Optician-Sans";
+    src: url("../fonts/optician-sans.woff") format("woff");
+}

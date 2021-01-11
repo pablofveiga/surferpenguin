@@ -1,0 +1,97 @@
+.intro-filmo {
+    margin-bottom: 12px;
+
+    p:nth-child(1) {
+        font-size: 19px;
+    }
+    p:nth-child(2) {
+        font-size: 19px;
+        margin: 0;
+    }
+
+}
+
+.filmografia li {
+    margin: 6px 0;
+    color: #fff;
+}
+
+.filmografia strong {
+    font-weight: bold;
+    color: #fff;
+}
+.filmografiaShowroom {
+    margin: 2em 0;
+}
+
+.cine-sup {
+    background: url(../pics/cinetop.jpg) 0 0/100% 100% transparent no-repeat;
+    height: 95px;
+    position: relative;
+    background-size: 100% 100%;
+}
+.filmografiaShowroom .filmografia {
+    background: url(../pics/pantalla.jpg) 0 0/100% 100% transparent no-repeat;
+    height: 349px;
+    overflow-y: scroll;
+    // padding-left: 14%;
+    position: relative;
+    background-size: 100% 100%;
+    transition: all 0.3s ease;
+
+    @media all and (max-width: 966px) {
+        padding-left: 77px;
+    }
+
+    @media all and (max-width: 894px) {
+        padding-left: 65px; 
+
+        ul {
+            margin-right: 42px;
+        }
+
+        li {
+            font-size: 14px;
+            margin: 8px 0;
+        }
+    }
+
+    @media all and (max-width: 467px) {
+        padding-left: 44px;
+
+        ul {
+            margin-right: 28px;
+        }
+    }
+
+
+
+}
+.cine-inf {
+    background: url(../pics/cineinf.jpg) 0 0/100% 100% transparent no-repeat;
+    height: 112px;
+    position: relative;
+    background-size: 100% 100%;
+}
+.butacas {
+    background: url(../pics/butacas.jpg) 0 0/100% 100% transparent no-repeat;
+    height: 170px;
+    background-size: 100% 100%;
+}
+.pinterest-widget {
+	text-align: center;
+	margin: 3em auto;;
+
+	> span {
+		max-width: 900px!important;
+		background: #316453!important;
+		box-shadow: none!important;
+	}
+
+}
+
+// PINTEREST
+div#pinterest-widget>span {
+    width: 100%;
+    max-width: 100%!important;
+}

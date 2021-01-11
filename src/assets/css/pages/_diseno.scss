@@ -1,0 +1,60 @@
+// DISENO
+#diseno {
+
+	.imagenes {
+		margin: 2em 0;
+		
+		.diseno-gallery {
+			display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-between;
+			
+			a {
+				margin: 0.5em;
+			}
+
+			@media (max-width: 414px) {
+				justify-content: space-around;
+
+				a {
+					img {
+						width: 120px;
+					}
+				}
+			}
+		}
+
+	}	
+
+}
+
+// TAPICES
+// DISENO
+#tapiceria {
+
+	.galeria-tapices {
+		margin: 2em 0;
+		
+		.diseno-gallery {
+			display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-between;
+			
+			a {
+				margin: 0.5em;
+			}
+
+			@media (max-width: 414px) {
+				justify-content: space-around;
+
+				a {
+					img {
+						width: 120px;
+					}
+				}
+			}
+		}
+
+	}	
+
+}

@@ -1,0 +1,22 @@
+#legal body {
+	h3 {
+		font-size: 1.5em;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	p, li {
+	    margin: 0.5em 0;
+	    font-size: 18px;
+	    line-height: 22px;
+	    text-align: justify;
+	}
+	strong {
+		font-weight: bold;
+	}
+}
+h3.titulo-legal {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 1em 0;
+    text-decoration: underline;
+}

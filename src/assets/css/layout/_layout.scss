@@ -1,0 +1,68 @@
+$mobilePadding: 0 12px;
+$desktopPadding: 0 20px;
+$desktopWidth: 1200px;
+
+$mobileBreakpoint: 991px;
+
+// CONTENEDOR
+body {
+	// background-color: $bodyBgColor;
+	// font-family: $mainFont;
+	// color: $textColor;
+}
+
+// CLASE CONTAINER: "kickflip"
+
+.kickflip {
+	padding: $desktopPadding;
+
+	@media (min-width: $mobileBreakpoint) {
+		margin: 0 auto;
+		max-width: $desktopWidth;
+	}
+
+}
+
+
+
+
+// CONVENCIONES
+* {
+	// font-family:  $font01;
+	// font-family: "Calibri";
+	// color: $textColor;
+}
+strong { font-weight: bold;}
+
+
+
+body .onlyMobile {
+	@media (min-width: $mobileBreakpoint ) {
+		display: none;
+	}
+}
+
+
+
+
+// SCROLL BAR
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;  
+    background-color: #ffffff; 
+}
+
+

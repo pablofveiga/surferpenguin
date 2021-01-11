@@ -1,0 +1,39 @@
+// VARIABLES:
+$headerBG: #d29139;
+
+
+.spHeader {
+    background-color: $headerBG;
+
+	&__info {
+		background: url(../pics/headerbg.jpg) center/cover no-repeat transparent;
+		display: flex;
+
+		@media (min-width: $mobileBreakpoint) {
+			height: 330px;
+		}
+
+
+		&__logo {
+			margin: 30px 0 0 20px;
+
+			&__img {}
+		}
+
+		&__text {
+			margin: 50px auto 0 auto;
+
+			&__title {
+				font-family: Optician-Sans;
+				font-size: 90px;
+				line-height: 59px;
+				text-align: center;
+				font-weight: 900;
+				color: #fff;
+				text-shadow: 0 0 6px #000;
+			}
+		}
+	}
+
+
+}
