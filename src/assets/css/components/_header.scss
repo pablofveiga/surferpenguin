@@ -1,23 +1,40 @@
 // VARIABLES:
 $headerBG: #d29139;
+$headerHeight: 264px;
+$logoMobileDim: 90px;
+$logoDesktopDim: 180px;
 
+@mixin logoDimension {
+	width: $logoMobileDim;
+	height: $logoMobileDim;
+
+	@media (min-width: $mobileBreakpoint) {
+		width: $logoDesktopDim;
+		height: $logoDesktopDim;		
+	}
+}
 
 .spHeader {
     background-color: $headerBG;
+    background: url("../pics/black-linen.png"),linear-gradient(to top, #e69d06, #ff6c44);
 
 	&__info {
-		background: url(../pics/headerbg.jpg) center/cover no-repeat transparent;
+		// background: url(../pics/headerbg.jpg) center/cover no-repeat transparent;
 		display: flex;
 
 		@media (min-width: $mobileBreakpoint) {
-			height: 330px;
+			height: $headerHeight;
 		}
 
 
 		&__logo {
-			margin: 30px 0 0 20px;
-
-			&__img {}
+			@include logoDimension;
+		    align-self: center;
+		    margin-left: auto;
+		    
+			&__img {
+				@include logoDimension;
+			}
 		}
 
 		&__text {
@@ -31,6 +48,13 @@ $headerBG: #d29139;
 				font-weight: 900;
 				color: #fff;
 				text-shadow: 0 0 6px #000;
+			}
+
+			&__subtitle {
+				font-family: "EastSeaDokdo-Regular";
+				font-size: 60px;
+				color: aliceblue;
+				margin: 10px 0 0;				
 			}
 		}
 	}
