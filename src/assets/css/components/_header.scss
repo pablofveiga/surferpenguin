@@ -57,6 +57,8 @@ $logoDesktopDim: 180px;
 			@include logoDimension;
 		    align-self: center;
 		    margin-left: auto;
+		    // background: url(../pics/logosurferpenguin.svg) center no-repeat transparent;
+		    background: url(../pics/logo03.svg) center/cover no-repeat transparent;
 
 			&__img {
 				@include logoDimension;

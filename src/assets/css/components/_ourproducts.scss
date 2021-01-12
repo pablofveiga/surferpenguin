@@ -21,11 +21,13 @@ $dd2: 120px;
 $dd3: 40px;
 $dd4: -60px;
 $dd5: 180px;
-$color: #fff;
+$color: ivory;
 
 .ourProducts {
 	// TEMP RULE
 	min-height: 65vh;
+	@include darkBlueGradient01;
+	// @include beachGradient;
 
 
 	&__wrapper {
@@ -35,8 +37,6 @@ $color: #fff;
 		align-items: center;
 		padding-top: 30px;
 	}
-
-	@include darkBlueGradient01;
 
 	&__header {
 
@@ -50,6 +50,17 @@ $color: #fff;
 
 	&__content {
 		width: 100%;
+
+		&__introText {
+			margin: 20px auto 0;
+
+			&__paragraph {
+				color: #fff;
+				font-family: 'EastSeaDokdo-Regular';
+				font-size: 40px;
+				text-align: center;
+			}
+		}
 
 		@at-root .products {
 		    display: flex;
@@ -117,7 +128,8 @@ $color: #fff;
 					background-color: #fff;
 					padding: 4px 0;
 					box-shadow: 0 0 7px #000;
-					left: 14px;
+					left: 0;
+					right: 0;
 					bottom: 0;
 
 					&__link {

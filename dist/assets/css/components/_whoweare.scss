@@ -2,20 +2,50 @@
 
 	height: calc(100vh -  #{$headerHeight});
 	// background-color: #000;
-	@include darkGradient01;
+	// @include darkGradient01;
+	@include beachGradient;
 
 	&__wrapper {
-		display: flex;
-		height: 100%;
+	    display: flex;
+	    height: 100%;
+	    position: relative;
+	    // z-index: 100;
+	    padding-top: 20px;
+	    flex-direction: column;
+	    align-items: center;
 	}
 
 	&__header {
 
 		&__title {
 		    color: #fff;
-		    font-family: 'Optician-Sans';
-		    font-size: 46px;
-		    line-height: 38px;
+		    font-family: 'Berlin-Sans-FB-Regular';
+		    font-size: 63px;
+		    letter-spacing: 0.5px;
+		    text-shadow: 0 0 2px #000;
+		}
+	}
+
+
+	&__content {
+	    display: flex;
+	    align-items: center;
+
+
+		&__img img {
+		    max-width: 570px;
+		    display: block;
+		    margin: 40px auto;			
+		}
+
+		p {
+		    font-family: 'EastSeaDokdo-Regular';
+		    font-size: 35px;
+		    line-height: 28px;
+		    width: 80%;
+		    color: ivory;
+		    margin-bottom: 10%;
+		    margin-left: 50px;			
 		}
 	}
 }

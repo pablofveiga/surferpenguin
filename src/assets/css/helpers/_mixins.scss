@@ -10,3 +10,7 @@
 	background: linear-gradient(to bottom, #283E51, #4B79A1);	
 }
 
+
+@mixin beachGradient {
+	background: linear-gradient(to bottom, #f7797d, #b56c1a, #6cbdff);
+}
