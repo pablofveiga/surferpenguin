@@ -111,6 +111,22 @@ $color: #fff;
 
 				&__name {
 					position: absolute;
+					text-align: center;
+					margin: auto;
+					width: 210px;
+					background-color: #fff;
+					padding: 4px 0;
+					box-shadow: 0 0 7px #000;
+					left: 14px;
+					bottom: 0;
+
+					&__link {
+						display: block;
+						font-size: 17px;
+						color: #000;
+						font-family: 'Optician-Sans';
+						font-weight: 700;
+					}
 				}
 
 			}
