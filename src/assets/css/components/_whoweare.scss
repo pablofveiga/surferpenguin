@@ -4,22 +4,20 @@
 	// background-color: #000;
 	@include darkGradient01;
 
+	&__wrapper {
+		display: flex;
+		height: 100%;
+	}
+
 	&__header {
 
 		&__title {
-			color: #fff;
+		    color: #fff;
+		    font-family: 'Optician-Sans';
+		    font-size: 46px;
+		    line-height: 38px;
 		}
 	}
 }
 
 
-.ourProducts {
-	@include darkBlueGradient01;
-	
-	&__header {
-
-		&__title {
-			// color: #fff;
-		}
-	}	
-}

@@ -1,0 +1,146 @@
+// ###  VARIABLES
+// DIAMOND ORIGINALS
+$dd1: 25px;
+$dd2: 50px;
+$dd3: 20px;
+$dd4: -25px;
+$dd5: 70px;
+$color: red;
+
+// DIAMOND OVERWRITING
+$dd1: 75px;
+$dd2: 150px;
+$dd3: 60px;
+$dd4: -75px;
+$dd5: 210px;
+$color: #fff;
+
+// 2 OV
+$dd1: 60px;
+$dd2: 120px;
+$dd3: 40px;
+$dd4: -60px;
+$dd5: 180px;
+$color: #fff;
+
+.ourProducts {
+	// TEMP RULE
+	min-height: 65vh;
+
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		align-items: center;
+		padding-top: 30px;
+	}
+
+	@include darkBlueGradient01;
+
+	&__header {
+
+		&__title {
+		    color: #fff;
+		    font-family: 'Optician-Sans';
+		    font-size: 46px;
+		    line-height: 38px;
+		}
+	}	
+
+	&__content {
+		width: 100%;
+
+		@at-root .products {
+		    display: flex;
+		    justify-content: space-evenly;
+		    margin-top: 20px;
+
+			&__item {
+				position: relative;
+
+				&__diamond {
+					border-style: solid;
+					border-color: transparent transparent $color transparent;
+					border-width: 0 $dd1 $dd1 $dd1;
+					height: 0;
+					width: $dd2;
+					box-sizing: content-box;
+					position: relative;
+					margin: $dd3 0 $dd2 0;
+				    filter: drop-shadow(2px 4px 6px black);
+
+					&:after {
+						content: "";
+						position: absolute;
+						top: $dd1;
+						left: $dd4;
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-color: $color transparent transparent transparent;
+						border-width: $dd5 $dd2 0 $dd2; 
+					}
+
+				 	&.black {
+				 		border-color: transparent transparent #000 transparent;
+
+				 		&:after {
+				 			border-color: #000 transparent transparent transparent;
+				 		}
+				 	}
+				 	&.green {
+				 		border-color: transparent transparent #7bb41f transparent;
+
+				 		&:after {
+				 			border-color: #7bb41f transparent transparent transparent;
+				 		}
+				 	}
+
+
+					&__img {
+					    display: block;
+					    position: relative;
+					    z-index: 100;
+					    width: 130px;
+					    top: 6px;
+					    left: -5px;						
+					}
+
+				}
+
+				&__name {
+					position: absolute;
+				}
+
+			}
+
+		}
+	}
+}
+
+
+
+
+// .cut-diamond {
+// 	border-style: solid;
+// 	border-color: transparent transparent $color transparent;
+// 	border-width: 0 $dd1 $dd1 $dd1;
+// 	height: 0;
+// 	width: $dd2;
+// 	box-sizing: content-box;
+// 	position: relative;
+// 	margin: $dd3 0 $dd2 0;
+//     filter: drop-shadow(2px 4px 6px black);
+
+
+//  	&:after {
+		
+//  	}
+
+
+
+//  	img {
+	
+//  	}
+// }
