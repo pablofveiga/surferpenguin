@@ -32,21 +32,41 @@
 	    align-items: center;
 
 
-		&__img img {
-		    max-width: 570px;
-		    display: block;
-		    margin: 40px auto;			
+		&__graphs {
+
+			&__img {
+			    max-width: 570px;
+			    display: block;
+			    margin: 40px auto;			
+			}
 		}
 
-		p {
-		    font-family: 'EastSeaDokdo-Regular';
-		    font-size: 35px;
-		    line-height: 28px;
-		    width: 80%;
-		    color: ivory;
-		    margin-bottom: 10%;
-		    margin-left: 50px;			
+		&__text {
+		    align-self: flex-start;
+		    padding-top: 30px;
+		    			
+			&__p {
+			    font-family: 'EastSeaDokdo-Regular';
+			    font-size: 35px;
+			    line-height: 28px;
+			    width: 80%;
+			    color: ivory;
+		        margin: 0 0 20px 30px;		
+			}
+
+			&__cta {
+				display: block;
+				width: 100px;
+				background-color: #fff;
+				padding: 5px 0;
+				border-radius: 5px;
+				font-family: 'Berlin-Sans-FB-Regular';
+				color: #000;
+				margin: auto;
+				text-align: center;				
+			}
 		}
+
 	}
 }
 

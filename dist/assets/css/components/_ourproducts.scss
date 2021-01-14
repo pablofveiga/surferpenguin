@@ -70,56 +70,6 @@ $color: ivory;
 			&__item {
 				position: relative;
 
-				&__diamond {
-					border-style: solid;
-					border-color: transparent transparent $color transparent;
-					border-width: 0 $dd1 $dd1 $dd1;
-					height: 0;
-					width: $dd2;
-					box-sizing: content-box;
-					position: relative;
-					margin: $dd3 0 $dd2 0;
-				    filter: drop-shadow(2px 4px 6px black);
-
-					&:after {
-						content: "";
-						position: absolute;
-						top: $dd1;
-						left: $dd4;
-						width: 0;
-						height: 0;
-						border-style: solid;
-						border-color: $color transparent transparent transparent;
-						border-width: $dd5 $dd2 0 $dd2; 
-					}
-
-				 	&.black {
-				 		border-color: transparent transparent #000 transparent;
-
-				 		&:after {
-				 			border-color: #000 transparent transparent transparent;
-				 		}
-				 	}
-				 	&.green {
-				 		border-color: transparent transparent #7bb41f transparent;
-
-				 		&:after {
-				 			border-color: #7bb41f transparent transparent transparent;
-				 		}
-				 	}
-
-
-					&__img {
-					    display: block;
-					    position: relative;
-					    z-index: 100;
-					    width: 130px;
-					    top: 6px;
-					    left: -5px;						
-					}
-
-				}
-
 				&__name {
 					position: absolute;
 					text-align: center;
@@ -146,29 +96,3 @@ $color: ivory;
 		}
 	}
 }
-
-
-
-
-// .cut-diamond {
-// 	border-style: solid;
-// 	border-color: transparent transparent $color transparent;
-// 	border-width: 0 $dd1 $dd1 $dd1;
-// 	height: 0;
-// 	width: $dd2;
-// 	box-sizing: content-box;
-// 	position: relative;
-// 	margin: $dd3 0 $dd2 0;
-//     filter: drop-shadow(2px 4px 6px black);
-
-
-//  	&:after {
-		
-//  	}
-
-
-
-//  	img {
-	
-//  	}
-// }

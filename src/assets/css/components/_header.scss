@@ -1,6 +1,6 @@
 // VARIABLES:
 $headerBG: #d29139;
-$headerHeight: 310px;
+$headerHeight: 350px;
 $logoMobileDim: 90px;
 $logoDesktopDim: 180px;
 
@@ -47,6 +47,7 @@ $logoDesktopDim: 180px;
 	&__info {
 		// background: url(../pics/headerbg.jpg) center/cover no-repeat transparent;
 		display: flex;
+		margin: 40px 0 0;
 
 		@media (min-width: $mobileBreakpoint) {
 			// height: $headerHeight;
@@ -66,7 +67,7 @@ $logoDesktopDim: 180px;
 		}
 
 		&__text {
-			margin: 36px auto 0 auto;
+			margin: 0 auto 0 auto;
 
 			&__title {
 				font-family: Berlin-Sans-FB-Regular;
