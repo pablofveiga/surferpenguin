@@ -1,0 +1,92 @@
+.targetMarkets {
+	padding: 40px 0 70px;
+	background-image: linear-gradient(to right, #889683, #f9fff7);
+	
+	@media (min-width: $mobileBreakpoint) {
+		min-height: 70vh;
+	}
+
+	&__header {
+		margin: 0 0 20px;
+
+		&__title {
+		    color: #000;
+		    text-align: center;
+		}
+	}
+
+
+	&__content {
+
+		&__intro {
+
+			&__text {
+			    font-family: 'Berlin-Sans-FB-Regular';
+			    font-size: 27px;
+			    font-style: italic;
+			    line-height: 28px;
+			    width: 80%;
+			    text-align: center;
+			    margin: auto;				
+			}
+		}
+
+		&__information {
+
+			@at-root .marketFlags {
+			    display: flex;
+			        flex-wrap: wrap;
+			    justify-content: space-around;
+			    margin: 48px auto 0;
+
+			    &__item {
+			    	position: relative;
+			    	max-width: 30%;
+				
+					@media (min-width: $mobileBreakpoint) {
+						max-width: 100%;	
+					}
+			    	&__pic {
+		    		    display: block;
+		    		    max-width: 100%;
+    					filter: drop-shadow(2px 4px 6px black);
+			    	}
+					&__name {
+					    text-align: center;
+					    background-color: ivory;
+					    font-family: 'Optician-Sans';
+					    position: absolute;
+					    width: 80%;
+					    left: 0;
+					    right: 0;
+					    margin: auto;
+					    box-shadow: 0 0 8px #000;
+					    padding: 0;
+					    font-size: 19px;
+					    width: 90%;
+					    bottom: -10px;
+
+						@media (min-width: $mobileBreakpoint) {
+						    // padding: 7px 0;
+						    font-size: 28px;
+						    bottom: 0;	
+						    z-index: 100;
+						    padding: 0;						
+						}
+					}
+
+
+
+			    }				
+			}
+
+		}
+
+		&__cta {
+			@include readButton;
+			margin-top: 70px;
+		}
+	}	
+
+}
+

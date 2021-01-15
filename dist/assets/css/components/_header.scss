@@ -1,6 +1,7 @@
 // VARIABLES:
 $headerBG: #d29139;
-$headerHeight: 350px;
+$headerMobileHeight: 150px;
+$headerDesktopHeight: 350px;
 $logoMobileDim: 90px;
 $logoDesktopDim: 180px;
 
@@ -15,21 +16,30 @@ $logoDesktopDim: 180px;
 }
 
 .spHeader {
+	position: relative;
+	height: $headerMobileHeight;
+	padding-top: 7px;
     background-color: $headerBG;
     background: url("../pics/black-linen.png"),linear-gradient(to top, #e69d06, #ff6c44);
 
     @media (min-width: $mobileBreakpoint) {
-    	height: $headerHeight;
+    	height: $headerDesktopHeight;
+    	padding-top: 0;
     }
 
 
     &__nav {
-		display: flex;
+		display: none;
 		justify-content: space-between;
 		padding: 10px 12px 7px;
 		box-shadow: 0 0px 9px 0px rgba(0, 0, 0, 0.47);
 		position: relative;
 		top: 10px;
+
+
+		@media (min-width: $mobileBreakpoint) {
+			display: flex;
+		}
 
     	&__item {
 			font-family: 'Optician-Sans';
@@ -47,9 +57,9 @@ $logoDesktopDim: 180px;
 	&__info {
 		// background: url(../pics/headerbg.jpg) center/cover no-repeat transparent;
 		display: flex;
-		margin: 40px 0 0;
 
 		@media (min-width: $mobileBreakpoint) {
+			margin: 40px 0 0;
 			// height: $headerHeight;
 		}
 
@@ -57,9 +67,13 @@ $logoDesktopDim: 180px;
 		&__logo {
 			@include logoDimension;
 		    align-self: center;
-		    margin-left: auto;
+		    
 		    // background: url(../pics/logosurferpenguin.svg) center no-repeat transparent;
 		    background: url(../pics/logo03.svg) center/cover no-repeat transparent;
+
+			@media (min-width: $mobileBreakpoint) {
+				margin-left: auto;
+			}
 
 			&__img {
 				@include logoDimension;
@@ -71,20 +85,43 @@ $logoDesktopDim: 180px;
 
 			&__title {
 				font-family: Berlin-Sans-FB-Regular;
-				font-size: 90px;
-				line-height: 72px;
-				letter-spacing: 5px;
 				text-align: center;
 				font-weight: 900;
 				color: #fff;
 				text-shadow: 0 0 6px #000;
+				letter-spacing: 5px;
+
+			    font-size: 56px;
+			    line-height: 51px;
+
+
+    			@media (min-width: $mobileBreakpoint) {
+					font-size: 90px;
+					line-height: 72px;    				
+    			}
 			}
 
 			&__subtitle {
 				font-family: "EastSeaDokdo-Regular";
-				font-size: 60px;
 				color: aliceblue;
-				margin: 10px 0 0;				
+
+			    position: absolute;
+			    bottom: 8px;
+			    font-size: 30px;
+			    width: 100%;
+			    left: 0;
+			    right: 0;
+			    margin: auto;
+			    text-align: center;
+
+    			@media (min-width: $mobileBreakpoint) {
+    				position: relative;
+    				bottom: 0;
+					font-size: 60px;
+					margin: 10px 0 0;
+    			}
+
+
 			}
 		}
 	}

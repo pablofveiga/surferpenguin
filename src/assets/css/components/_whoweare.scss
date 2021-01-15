@@ -1,9 +1,14 @@
 .whoWeAre {
 
-	height: calc(100vh -  #{$headerHeight});
 	// background-color: #000;
 	// @include darkGradient01;
 	@include beachGradient;
+
+    @media (min-width: $mobileBreakpoint) {
+		min-height: calc(100vh -  #{$headerDesktopHeight});
+    	// max-width: 570px;
+    }
+
 
 	&__wrapper {
 	    display: flex;
@@ -20,9 +25,14 @@
 		&__title {
 		    color: #fff;
 		    font-family: 'Berlin-Sans-FB-Regular';
-		    font-size: 63px;
+		    font-size: 48px;
 		    letter-spacing: 0.5px;
 		    text-shadow: 0 0 2px #000;
+
+		    @media (min-width: $mobileBreakpoint) {
+		    	font-size: 63px;
+		    }
+
 		}
 	}
 
@@ -30,40 +40,64 @@
 	&__content {
 	    display: flex;
 	    align-items: center;
+	    flex-wrap: wrap;
 
+	    @media (min-width: $mobileBreakpoint) {
+	    	flex-wrap: nowrap;
+	    }
 
 		&__graphs {
 
 			&__img {
-			    max-width: 570px;
+				max-width: 100%;
 			    display: block;
-			    margin: 40px auto;			
+			    margin: 14px auto 10px;
+
+			    @media (min-width: $mobileBreakpoint) {
+			    	margin: 40px auto;
+			    	max-width: 570px;
+			    }
 			}
 		}
 
 		&__text {
 		    align-self: flex-start;
-		    padding-top: 30px;
-		    			
+
+
+		    @media (min-width: $mobileBreakpoint) {
+		    	padding-top: 30px;
+		    }
+
 			&__p {
 			    font-family: 'EastSeaDokdo-Regular';
-			    font-size: 35px;
-			    line-height: 28px;
-			    width: 80%;
 			    color: ivory;
-		        margin: 0 0 20px 30px;		
+			    margin: 0 auto 12px;
+			    font-size: 26px;
+			    line-height: 21px;
+
+			    @media (min-width: $mobileBreakpoint) {
+		        	margin: 0 0 20px 30px;		
+				    font-size: 35px;
+				    line-height: 28px;
+				    width: 80%;
+
+			    }
+
 			}
 
 			&__cta {
-				display: block;
-				width: 100px;
-				background-color: #fff;
-				padding: 5px 0;
-				border-radius: 5px;
-				font-family: 'Berlin-Sans-FB-Regular';
-				color: #000;
-				margin: auto;
-				text-align: center;				
+
+				@include readButton;
+				margin: 24px auto;
+				// display: block;
+				// width: 100px;
+				// background-color: #fff;
+				// padding: 5px 0;
+				// border-radius: 5px;
+				// font-family: 'Berlin-Sans-FB-Regular';
+				// color: #000;
+				// margin: auto;
+				// text-align: center;				
 			}
 		}
 

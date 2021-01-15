@@ -10,20 +10,27 @@ body {
 	// font-family: $mainFont;
 	// color: $textColor;
 }
-
 // CLASE CONTAINER: "kickflip"
-
 .kickflip {
-	padding: $desktopPadding;
+	padding: $mobilePadding;
 
 	@media (min-width: $mobileBreakpoint) {
 		margin: 0 auto;
+		padding: $desktopPadding;
 		max-width: $desktopWidth;
 	}
-
 }
 
 
+// SECCIONES
+.penguinHeader {
+
+	&__title {
+	    color: #fff;
+	    font-family: 'Berlin-Sans-FB-Regular';
+	    font-size: 63px;
+	}
+}
 
 
 // CONVENCIONES
