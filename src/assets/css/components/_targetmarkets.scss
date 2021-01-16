@@ -41,10 +41,12 @@
 
 			    &__item {
 			    	position: relative;
-			    	max-width: 30%;
+			    	max-width: 40%;
+			    	margin: 0 0 50px;
 				
 					@media (min-width: $mobileBreakpoint) {
-						max-width: 100%;	
+						max-width: 100%;
+						margin: 0;
 					}
 			    	&__pic {
 		    		    display: block;

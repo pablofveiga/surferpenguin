@@ -9,6 +9,10 @@ body {
 	// background-color: $bodyBgColor;
 	// font-family: $mainFont;
 	// color: $textColor;
+	&.blocked {
+		overflow: hidden;
+	}
+	
 }
 // CLASE CONTAINER: "kickflip"
 .kickflip {
@@ -31,7 +35,9 @@ body {
 	    font-size: 63px;
 	}
 }
-
+// html {
+//   scroll-behavior: smooth;
+// }
 
 // CONVENCIONES
 * {

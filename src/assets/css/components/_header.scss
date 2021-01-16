@@ -51,6 +51,27 @@ $logoDesktopDim: 180px;
 			    color: #6cbdff;
 			}
     	}
+
+    	&.opened {
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: flex-start;
+		    position: fixed;
+		    width: 90%;
+		    height: 100%;
+		    z-index: 10000;
+		    background-color: rgba(75, 75, 75, 0.91);
+		    box-shadow: 11px 0 35px 31px rgba(0, 0, 0, 0.75);
+		    left: 0;
+		    top: 0;    	
+
+		    	.spHeader__nav__item {
+				    border-bottom: 1px dashed #fff;
+				    padding: 8px 0;
+				    margin: 0 0 23px;
+				    border-top: 1px dashed #fff;		    		
+		    	}
+    	}
     }
 
 
@@ -127,4 +148,86 @@ $logoDesktopDim: 180px;
 	}
 
 
+}
+
+
+.menuTrigger {
+	opacity: 0;
+	width: 0;
+    height: 0;
+    cursor: pointer;
+    background-color: #0d0d0d;
+    box-shadow: 0 0 10px 0px #c25833;
+    position: fixed;
+    bottom: 8%;
+    right: 8%;
+    border-radius: 50%;
+    z-index: 1000000;
+	transition: all 0.6s ease;
+	@include noTextSelection;
+
+    ul {
+    	display: none;
+		flex-direction: column;
+		height: 30px;
+		width: 50px;
+		justify-content: space-evenly;
+		align-items: flex-end;
+		top: 10px;
+		position: relative;
+		right: 11px;
+
+		li {
+			width: 30px;
+			height: 3px;
+			background-color: #fff;
+			border-radius: 2px;
+			transition: all 0.1s ease;
+
+			&:last-child {
+				width: 21px;
+			}
+		}
+    }
+    &.visible {
+    	opacity: 1;
+    	width: 50px;
+    	height: 50px;
+
+    	ul {
+    		display: flex;
+    	}
+    }
+
+	&.cross {
+		ul {
+			li {
+				transition: all 0.1s ease;					
+
+				&:first-child {
+					background-color: gray;
+					transform: rotate(-45deg);
+					width: 35px;
+					position: relative;
+					top: 8px;
+					left: 4px;
+				}
+				&:nth-child(2)  {
+					background-color: gray;
+					transform: rotate(45deg);
+					width: 35px;
+					position: relative;						
+					left: 3px;
+				}
+				&:last-child {
+					width: 0;
+				}
+			}
+
+		}
+	}
+
+	@media (min-width: $mobileBreakpoint) {
+		display: none;
+	}
 }
