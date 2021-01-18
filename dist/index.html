@@ -44,12 +44,13 @@
 
 <body>
     <header class="spHeader">
+        <div class="spHeader__overlay"></div>
         <div class="kickflip">
             <nav class="spHeader__nav">
                 <a class="spHeader__nav__item active" href="#">Home</a>
                 <a class="spHeader__nav__item" href="#whoWeAre">Who We Are</a>
-                <a class="spHeader__nav__item" href="#ourProducts">Our Products</a>
                 <a class="spHeader__nav__item" href="#ourServices">Our Services</a>
+                <a class="spHeader__nav__item" href="#ourProducts">Our Products</a>
                 <a class="spHeader__nav__item" href="#targetMarkets">Target Markets</a>
                 <a class="spHeader__nav__item" href="#contact">Contact Us</a>
             </nav>
@@ -58,7 +59,11 @@
                     <!-- <img src="assets/pics/logo250.png" alt="Surferpenguin" class="spHeader__info__logo__img"> -->
                 </a>
                 <div class="spHeader__info__text">
-                    <h2 class="spHeader__info__text__title">Surfer<br>Penguin</h2>
+                    <h2 class="spHeader__info__text__title">
+                        <span class="spHeader__info__text__title__part">Surfer</span>
+                         <br>
+                        <span class="spHeader__info__text__title__part">Penguin</span>
+                     </h2>
                     <h3 class="spHeader__info__text__subtitle">Cool & Fresh content providers</h3>
                 </div>
             </div>
@@ -75,17 +80,16 @@
         </div>      
     </div>
 
-
     <!-- SECCION 1 -->
     <section class="whoWeAre " id="whoWeAre">
+        <div class="whoWeAre__overlay"></div>
         <div class="kickflip whoWeAre__wrapper">
             <header class="whoWeAre__header">
                 <h2 class="whoWeAre__header__title">Who are Surfer Penguin?</h2>
             </header>
             <div class="whoWeAre__content">
                 <div class="whoWeAre__content__graphs">
-                    <!-- <img src="assets/pics/ourteam.png" alt="Our Team"> -->
-                    <img src="assets/pics/ourteambig.png" alt="Our Team" class="whoWeAre__content__graphs__img">
+                    <img src="assets/pics/whowhite.png" alt="Our Team" class="whoWeAre__content__graphs__img">
                 </div>
                 <div class="whoWeAre__content__text">
                     <p class="whoWeAre__content__text__p">
@@ -99,7 +103,56 @@
             </div>
         </div>
     </section>
-    <!-- SECCION 2: OUR PRODUCTS -->
+
+    
+    <!-- SECCION 2: OUR SERVICES -->
+    <section class="ourServices " id="ourServices">
+        <div class="kickflip ourServices__wrapper">
+            <header class="ourServices__header penguinHeader">
+                <h2 class="ourServices__header__title penguinHeader__title">Our Services</h2>
+            </header>
+            <div class="ourServices__content">
+                <div class="ourServices__content__intro">
+                    <p class="ourServices__content__intro__text">Leading generation experts joining this project to do our best and achieve leads with good content, thinking on final users always.</p>
+                </div>
+                <div class="servicesGrid">
+                    <div class="servicesGrid__item">
+                        <i class="fa fa-cogs servicesGrid__item__icon" aria-hidden="true"></i>
+                        <h3 class="servicesGrid__item__title">Web Business</h3>
+                        <div class="servicesGrid__item__description">
+                            <p class="servicesGrid__item__description__p">Unerstand UX signals to put all together and give final user good tools to compare and find best material / content</p>
+                        </div>
+                    </div>
+                    <div class="servicesGrid__item">
+                        <i class="fa fa-cloud servicesGrid__item__icon" aria-hidden="true"></i>
+                        <h3 class="servicesGrid__item__title">Cloud Servers</h3>
+                        <div class="servicesGrid__item__description">
+                            <p class="servicesGrid__item__description__p">Always working with the best peroforming servers and latest technologies</p>
+                        </div>
+                    </div>
+                    <div class="servicesGrid__item">
+                        <i class="fa fa-map-marker servicesGrid__item__icon" aria-hidden="true"></i>
+                        <h3 class="servicesGrid__item__title">GEO Targeting IPS</h3>
+                        <div class="servicesGrid__item__description">
+                            <p class="servicesGrid__item__description__p">Switch content depending on Geo IP to give the best material per country, we will focus on LATAM markets</p>
+                        </div>
+                    </div>
+                    <div class="servicesGrid__item">
+                        <i class="fa fa-graduation-cap servicesGrid__item__icon" aria-hidden="true"></i>
+                        <h3 class="servicesGrid__item__title">Web Experts</h3>
+                        <div class="servicesGrid__item__description">
+                            <p class="servicesGrid__item__description__p">In order to be one of the best affiliates sites we have the best devs and techs with a lot of years of expertese on this business</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="ourServices__content__cta" title="Coming soon...">Learn More</a>
+        </div>
+    </section>
+
+
+
+    <!-- SECCION 3: OUR PRODUCTS -->
     <section class="ourProducts" id="ourProducts">
         <div class="kickflip ourProducts__wrapper">
             <header class="ourProducts__header penguinHeader">
@@ -149,50 +202,7 @@
             </div>
         </div>
     </section>
-    <!-- SECCION 3: OUR SERVICES -->
-    <section class="ourServices " id="ourServices">
-        <div class="kickflip ourServices__wrapper">
-            <header class="ourServices__header penguinHeader">
-                <h2 class="ourServices__header__title penguinHeader__title">Our Services</h2>
-            </header>
-            <div class="ourServices__content">
-                <div class="ourServices__content__intro">
-                    <p class="ourServices__content__intro__text">Leading generation experts joining this project to do our best and achieve leads with good content, thinking on final users always.</p>
-                </div>
-                <div class="servicesGrid">
-                    <div class="servicesGrid__item">
-                        <i class="fa fa-cogs servicesGrid__item__icon" aria-hidden="true"></i>
-                        <h3 class="servicesGrid__item__title">Web Business</h3>
-                        <div class="servicesGrid__item__description">
-                            <p class="servicesGrid__item__description__p">Unerstand UX signals to put all together and give final user good tools to compare and find best material / content</p>
-                        </div>
-                    </div>
-                    <div class="servicesGrid__item">
-                        <i class="fa fa-cloud servicesGrid__item__icon" aria-hidden="true"></i>
-                        <h3 class="servicesGrid__item__title">Cloud Servers</h3>
-                        <div class="servicesGrid__item__description">
-                            <p class="servicesGrid__item__description__p">Always working with the best peroforming servers and latest technologies</p>
-                        </div>
-                    </div>
-                    <div class="servicesGrid__item">
-                        <i class="fa fa-map-marker servicesGrid__item__icon" aria-hidden="true"></i>
-                        <h3 class="servicesGrid__item__title">GEO Targeting IPS</h3>
-                        <div class="servicesGrid__item__description">
-                            <p class="servicesGrid__item__description__p">Switch content depending on Geo IP to give the best material per country, we will focus on LATAM markets</p>
-                        </div>
-                    </div>
-                    <div class="servicesGrid__item">
-                        <i class="fa fa-graduation-cap servicesGrid__item__icon" aria-hidden="true"></i>
-                        <h3 class="servicesGrid__item__title">Web Experts</h3>
-                        <div class="servicesGrid__item__description">
-                            <p class="servicesGrid__item__description__p">In order to be one of the best affiliates sites we have the best devs and techs with a lot of years of expertese on this business</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="ourServices__content__cta" title="Coming soon...">Learn More</a>
-        </div>
-    </section>
+
     <!-- SECCION 4: TARGET MARKETS -->
     <section class="targetMarkets" id="targetMarkets">
         <div class="kickflip targetMarkets__wrapper">
@@ -201,9 +211,17 @@
             </header>
             <div class="targetMarkets__content">
                 <div class="targetMarkets__content__intro">
-                    <p class="targetMarkets__content__intro__text">Surferpenguin target markets are now Colombia, Mexico, Peru and Spain</p>
+                    <p class="targetMarkets__content__intro__text">Surferpenguin target markets are now Brazil, Chile, Colombia, Mexico, Peru and Spain</p>
                 </div>
                 <div class="targetMarkets__content__information marketFlags">
+                    <div class="marketFlags__item">
+                        <img src="assets/pics/brazil.png" alt="Penguin Surfer opperates in Brazil" class="marketFlags__item__pic">
+                        <h4 class="marketFlags__item__name">Brazil</h4>
+                    </div>
+                    <div class="marketFlags__item">
+                        <img src="assets/pics/chile.png" alt="Penguin Surfer opperates in Chile" class="marketFlags__item__pic">
+                        <h4 class="marketFlags__item__name">Chile</h4>
+                    </div>
                     <div class="marketFlags__item">
                         <img src="assets/pics/colombia.png" alt="Penguin Surfer opperates in Colombia" class="marketFlags__item__pic">
                         <h4 class="marketFlags__item__name">Colombia</h4>
@@ -231,37 +249,8 @@
             <header class="contact__header penguinHeader">
                 <h2 class="contact__header__title penguinHeader__title">Keep in touch</h2>
             </header>
-            <div class="contact__content">
-            	<div  style="display: none;">
-    				<form method="post" class="contactForm contacto" id="form" >
-					    <div class="formContainer">
-					        <div>
-					            <label class="nameLabel" for="nombre">Name:</label>
-					            <input class="name nombre" type="text" name="nombre" id="nombre" required>
-					        </div>
-					        <div>
-					            <label class="emailLabel" for="email">email:</label>
-					            <input class="email" type="email" name="email" id="email" required>
-					        </div>
-					        <div class="message">
-					            <label class="messageLabel" for="mensaje">Message:</label>
-					            <textarea class="message mensaje" name="mensaje" id="mensaje" required></textarea>
-					        </div>
-					    </div>
-					    <input  id="submit" name="send" type="submit"  value="Send" class="send boton_envio">
-
-					    <div class="ultimo" id="contactResponse">
-					        <img src="pics/ajax.gif" class="ajaxgif hide" alt="Loading..." />
-					        <div class="msg"></div>
-					    </div>
-					</form>
-					<div class="sentMsg">
-					    <p>Your message has been sent successfully.</p>
-					    <p>I will answer you as soon as posssible.</p>
-					</div>
-            	</div>
-
-            	<a class="contact__content__send" href="mailto:info@penguinsurfer.com">info@penguinsurfer.com          		
+            <div class="contact__content">      
+               	<a class="contact__content__send" href="mailto:info@penguinsurfer.com">info@penguinsurfer.com          		
             	</a>
         	</div>
         </div>
