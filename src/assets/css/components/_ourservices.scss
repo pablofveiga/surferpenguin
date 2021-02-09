@@ -135,4 +135,29 @@
 			}
 		}
     }
+
+
+    // PAGE VERSION
+    &--displayed {
+    	display: block;
+    
+    	section {
+    		display: block;
+    	}
+
+    }
+    // RULES FOR ELEMENTS ONLY PRESENT (OR DESCENT) IN DISPLAYED GRID
+    &__item {
+    	&__header {
+    		&__icon {
+			    font-size: 45px;
+			    width: 70px;
+			    height: 70px;
+			    line-height: 70px;
+    		}
+    	}
+    }
+
+
+
 }
