@@ -57,7 +57,7 @@
                 <a class="spHeader__nav__item" href="../target-markets/">Target Markets</a>
                 <a class="spHeader__nav__item active" href="../contact-us/">Contact Us</a>
             </nav>
-            <div class="spHeader__info" style="display: none;">
+            <div class="spHeader__info">
                 <a href="#" class="spHeader__info__logo">
                 </a>
                 <div class="spHeader__info__text">
@@ -91,51 +91,87 @@
             </header>
             <div class="ourProducts__content">
 
-                <br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br>
 
                 <p>FAcebook, twitter, RRSS y esas cosas, con imágenes y tal para que quede más guapo.</p>
 
 
 
                 <form class="contactForm">
-                    <label class="contactForm__label" for="cName">Name: </label>
-                    <input class="contactForm__input" type="text" id="cName"></input>
 
-                    <label class="contactForm__label" for="cComp">Company: </label>
-                    <input class="contactForm__input" type="text" id="cComp"></input>
-
-                    <label class="contactForm__label" for="cMsg">Message: </label>
-                    <textarea class="contactForm__message" id="cMsg">
-                        
-                    </textarea>
-
-                    <fieldset class="contactForm__fieldset">
-                        <legend class="contactForm__fieldset__legend">I am interested in:</legend>
-
-                        <label class="contactForm__label" for="cSct">Secretcasinotips</label>
-                        <input class="contactForm__input" type="checkbox" id="cSct"></input>
-                        <label class="contactForm__label" for="sGmb">GamblersConnected</label>
-                        <input class="contactForm__input" type="checkbox" id="sGmb"></input>
-                        <label class="contactForm__label" for="sTMS">TheMagazineSport</label>
-                        <input class="contactForm__input" type="checkbox" id="sTMS"></input>
-                        <label class="contactForm__label" for="sTDP">Academia Trading</label>
-                        <input class="contactForm__input" type="checkbox" id="sTDP"></input>
-                        
-                    </fieldset>
-
-                    
-                    <input class="contactForm__input" type="checkbox" id="cAccept"></input>
-                    <label class="contactForm__label" for="cAccept">I accept all the legal stuff... </label>
+                    <div class="contactForm__row">
+                        <label class="contactForm__label" for="cName">Name: </label>
+                        <input class="contactForm__input" type="text" id="cName"></input>
+                    </div>
 
 
-                    <input type="submit" class="contactForm__CTA" name="sendMessage" value="Send">
+                    <div class="contactForm__row">
+                        <label class="contactForm__label" for="cEmail">Email: </label>
+                        <input class="contactForm__input" type="text" id="cEmail"></input>
+                    </div>
+
+                    <div class="contactForm__row">
+                        <label class="contactForm__label" for="cComp">Company: </label>
+                        <input class="contactForm__input" type="text" id="cComp"></input>
+                    </div>
+
+
+                    <div class="contactForm__row messageBox">
+                        <label class="contactForm__label" for="cMsg">Message: </label>
+                        <textarea class="contactForm__message" id="cMsg">                           
+                        </textarea>
+                    </div>
+
+
+                    <div class="contactForm__row">
+                        <fieldset class="contactForm__fieldset">
+                            <legend class="contactForm__fieldset__legend">I am interested in:</legend>
+
+                            <div class="contactForm__fieldset__item__wrapper">
+                                <div class="contactForm__fieldset__item">
+                                    <input class="contactForm__fieldset__item__check" type="checkbox" id="cSct"></input>
+                                    <label class="contactForm__fieldset__item__label" for="cSct">Secretcasinotips</label>
+                                </div>
+
+                                <div class="contactForm__fieldset__item">
+                                    <input class="contactForm__fieldset__item__check" type="checkbox" id="sGmb"></input>
+                                    <label class="contactForm__fieldset__item__label" for="sGmb">GamblersConnected</label>
+                                </div>
+
+                                <div class="contactForm__fieldset__item">
+                                    <input class="contactForm__fieldset__item__check" type="checkbox" id="sTMS"></input>
+                                    <label class="contactForm__fieldset__item__label" for="sTMS">TheMagazineSport</label>
+                                </div>
+
+                                <div class="contactForm__fieldset__item">
+                                    <input class="contactForm__fieldset__item__check" type="checkbox" id="sTDP"></input>
+                                    <label class="contactForm__fieldset__item__label" for="sTDP">Academia Trading</label>
+                                </div>     
+                            </div>
+
+                                                       
+                        </fieldset>
+                    </div>
+
+                    <div class="contactForm__row">
+                        <input type="submit" class="contactForm__CTA" name="sendMessage" value="Send">
+                    </div>                    
+
+                    <div class="contactForm__row contactForm__row--inline">    
+                        <input class="contactForm__input" type="checkbox" id="cAccept"></input>
+                        <label class="contactForm__label contactForm__label--legal" for="cAccept">I accept all the legal stuff... </label>
+                    </div>
+
+
+        
+
 
                 </form>
 
