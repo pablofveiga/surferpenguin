@@ -31,7 +31,16 @@ function navigation() {
 
 
 
-
+    // SCROLL TO TOP 
+    function scrollToTop(scrollDuration) {
+        var scrollStep = -window.scrollY / (scrollDuration / 15),
+            scrollInterval = setInterval(function(){
+            if ( window.scrollY != 0 ) {
+                window.scrollBy( 0, scrollStep );
+            }
+            else clearInterval(scrollInterval); 
+        },15);
+    }
 
 
 
@@ -40,6 +49,8 @@ function navigation() {
 let menusContainer = document.querySelector(".spHeader__nav");
 let navMenu = document.querySelector(".spHeader__nav");
 let mobileTriggerBtn = document.querySelector(".menuTrigger");
+    // let frontMenu = document.querySelector(".spHeader__nav");
+
 
 // LOCK/UNLOCK BODY (1,0)
 function blockBody(state) {
@@ -50,6 +61,15 @@ function blockBody(state) {
         document.querySelector("body").classList.remove("blocked");
     }
 }
+
+
+    // SHOW FRONT
+    function showNavMenu() {
+        console.log("mostrar menu movil");
+  
+    }
+
+
 // SHOW/HIDE MOBILE TRIGGER (1,0)
 function showTrigger(status){
     if (status == 1) {
@@ -64,24 +84,26 @@ function mobileTrigger() {
     let mobileBreakpoint = 991;
     let trigger = document.getElementById("menuTrigger");
     trigger.addEventListener("click",function(){
-        if (window.outerWidth < 991) {
             menusContainer.classList.toggle("opened");
             trigger.classList.toggle("cross");
 
-            if (menusContainer.classList.contains("opened")) {            	
-            	document.body.classList.add("blocked");
+            if (menusContainer.classList.contains("opened")) {              
+                document.body.classList.add("blocked");
 
             } else {
-            	menusContainer.classList.remove("opened");
-            	document.body.classList.remove("blocked");
+                menusContainer.classList.remove("opened");
+                document.body.classList.remove("blocked");
             }
+        
+        if (window.outerWidth < 991) {
+
         } else {
-            showNavMenu();            
+            // showNavMenu();            
         }
     });
-    trigger.addEventListener("dblclick",function(){
-        scrollToTop(500);
-    });
+    // trigger.addEventListener("dblclick",function(){
+    //     scrollToTop(500);
+    // });
 }
 // DATA-SCROLL FUNCTION
 var scrollStop = function (callback) {

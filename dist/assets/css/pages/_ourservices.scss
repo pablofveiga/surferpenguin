@@ -1,13 +1,79 @@
 .servicesPage {
 
 	&__header  {
+		margin: 2em 0 0;
+
 
 		&__title {
 			color: #000;
 		}
 
 		&__subtitle {
-			
+		    font-family: 'Optician-Sans';
+		    font-size: 18px;
+		    letter-spacing: -0.75px;
+		    margin: 4px 0 0;
 		}
 	}
+
+
+	&__content {
+		margin: 2em 0 4em;
+	}
+}
+
+.penguinServices {
+
+	&__header {
+		// display: flex;
+
+
+		&__icon {
+
+		}
+
+		&__title {
+
+		}
+	}
+
+	&__item {
+    	margin: 40px 0 0;
+
+		&__header {
+			display: flex;
+			align-items: center;
+
+			&__icon {
+			font-size: 42px;
+			display: block;
+			color: #333;			
+			}
+
+			&__title {
+	    	    font-family: 'Optician-Sans';
+			    margin: 0 0 0 12px;
+			    color: #333;
+			    font-size: 33px;
+
+			    @media (min-width: $mobileBreakpoint) {
+			    	font-size: 43px;
+
+			    }
+			}
+
+		}
+
+		&__content {
+
+
+			// SAMPLE LOREM IPSUM
+			p {
+				font-size: 16px;
+    			margin: 6px 0 0;
+			}
+		}
+	}
+
+
 }

@@ -34,6 +34,13 @@ $logoDesktopDim: 250px;
     	// background: none;
     	background: linear-gradient(to bottom, #434343, #000);
     	height: auto;
+
+    	.spHeader__info {
+
+    		@media (min-width: $mobileBreakpoint) {
+    			display: none;
+    		}
+    	}
     }
 
 
