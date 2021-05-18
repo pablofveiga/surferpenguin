@@ -28,6 +28,8 @@ $color: ivory;
 	min-height: 65vh;
 	@include darkBlueGradient01;
 	padding: 40px 0 70px;
+	position: relative;
+	z-index: 100;
 	// @include beachGradient;
 
 

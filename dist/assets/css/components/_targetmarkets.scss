@@ -1,5 +1,8 @@
 .targetMarkets {
 	padding: 40px 0 70px;
+	position: relative;
+	z-index: 100;
+	background-color: #fff;
 	// background-image: linear-gradient(to right, #889683, #f9fff7);
 	
 	@media (min-width: $mobileBreakpoint) {

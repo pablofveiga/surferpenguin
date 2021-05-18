@@ -1,7 +1,7 @@
 // // ========= MANDATORY ============================
 @import "base/_reset.scss";
 @import "base/_fonts.scss";
-// @import "_variables.scss";
+@import "base/_variables.scss";
 
 // // // ==== LAYOUT ====
 @import "layout/_layout.scss";
@@ -26,6 +26,7 @@
 @import "pages/_ourservices.scss";
 @import "pages/_ourproducts.scss";
 @import "pages/_contact.scss";
+@import "pages/_whowearepage.scss";
 
 
 
