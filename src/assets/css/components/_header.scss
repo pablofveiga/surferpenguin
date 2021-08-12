@@ -1,8 +1,8 @@
 // VARIABLES:
 $headerBG: #d29139;
-$headerMobileHeight: 80px;
+$headerMobileHeight: 60px;
 $headerDesktopHeight: 350px;
-$logoMobileDim: 60px;
+$logoMobileDim: 48px;
 $logoDesktopDim: 250px;
 
 @mixin logoDimension {
@@ -18,20 +18,18 @@ $logoDesktopDim: 250px;
 .spHeader {
 	position: relative;
 	height: $headerMobileHeight;
-	padding-top: 7px;
+	// padding-top: 7px;
     // background-color: $headerBG;
     // @include brownGradient;
     // box-shadow: inset 0 0 5px 1px #000;
-
-	        background-color: #d29139;
-    		background: url(../pics/black-linen.png),linear-gradient(to top, #5b574f, #6ad4bd);
-
-
 
     @media (min-width: $mobileBreakpoint) {
     	height: $headerDesktopHeight;
     	padding-top: 0;
     	box-shadow: none;
+
+	        background-color: #d29139;
+    		background: url(../pics/black-linen.png),linear-gradient(to top, #5b574f, #6ad4bd);
     }
 
     // &--nude {
@@ -151,23 +149,35 @@ $logoDesktopDim: 250px;
 		// MAYBE ON MQ
 		@at-root .fixedHomeInfo {
 			position: fixed;
-		    top: 41px;
+		    // top: 41px;
+		    top: 0;
 		    left: 0;
 		    right: 0;
 		    z-index: 10;
+			height: $headerMobileHeight;
+			display: flex;
+
+			&.kickflip {
+				padding: 0;
+
+				@media (min-width: $mobileBreakpoint) {
+					padding: inherit;
+				}
+			}
 
 		}
 
 
 		&__logo {
 			@include logoDimension;
-		    align-self: center;
-		    margin: 3px 10px 0;
+		    // align-self: center;
+		    // margin: 3px 10px 0;
 		    
 		    // background: url(../pics/logosurferpenguin.svg) center no-repeat transparent;
 		    background: url(../pics/logo03.svg) center/cover no-repeat transparent;
 
 			@media (min-width: $mobileBreakpoint) {
+			// margin: 3px 10px 0;
 				margin-left: auto;
 			}
 
@@ -177,8 +187,8 @@ $logoDesktopDim: 250px;
 		}
 
 		&__text {
-			margin: 0 auto 0 auto;
-			    align-self: center;
+			// margin: 0 auto 0 auto;
+			    // align-self: center;
 
 			&__title {
 				text-align: center;
