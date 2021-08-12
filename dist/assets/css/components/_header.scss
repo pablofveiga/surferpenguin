@@ -196,14 +196,17 @@ $logoDesktopDim: 250px;
 					// color: #fff;
 					// text-shadow: 0 0 6px #000;
 
-	color: $green04;
-    text-shadow: 0 0 5px #000;
+					color: $green04;
+				    text-shadow: 0 0 5px #000;
 
 
 				    display: inline-flex;
 					margin: 0 0 0 8px;
 				    font-size: 32px;
+
+				    // TODO: Make integer all LINE HEIGHTS
 				    // line-height: 51px;
+					
 					letter-spacing: 3px;
 
 
