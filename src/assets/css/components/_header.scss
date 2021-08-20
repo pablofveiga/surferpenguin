@@ -8,7 +8,6 @@ $logoDesktopDim: 250px;
 $mobileCTAiconBG: #d1d1d1;
 
 
-
 @mixin logoDimension {
 	width: $logoMobileDim;
 	height: $logoMobileDim;
@@ -27,9 +26,8 @@ $mobileCTAiconBG: #d1d1d1;
     	height: $headerDesktopHeight;
     	padding-top: 0;
     	box-shadow: none;
-
-	        background-color: #d29139;
-    		background: url(../pics/black-linen.png),linear-gradient(to top, #5b574f, #6ad4bd);
+        background-color: #d29139;
+   		background: url(../pics/black-linen.png),linear-gradient(to top, #5b574f, #6ad4bd);
     }
 
     &__overlay {
@@ -111,8 +109,6 @@ $mobileCTAiconBG: #d1d1d1;
     	}
     }
 
-
-
 	&__info {
 		// height: 100%;
 		display: grid;
@@ -165,8 +161,6 @@ $mobileCTAiconBG: #d1d1d1;
 
 
 			@media (min-width: $mobileBreakpoint) {
-				// margin-left: auto;
-
 		    	background: url(../pics/logo03.svg) center/85% no-repeat transparent;
 			}
 
@@ -182,8 +176,6 @@ $mobileCTAiconBG: #d1d1d1;
 		    display: flex;
 		    justify-content: center;
 		    align-items: center;
-
-
 
 			&__title {
 				text-align: center;
@@ -206,9 +198,7 @@ $mobileCTAiconBG: #d1d1d1;
 	    			@media (min-width: $mobileBreakpoint) {
 						letter-spacing: 5px;
 						font-size: 90px;
-						line-height: 72px;    				
-				    
-
+						line-height: 72px;
 				    	text-shadow: 0 0 5px #000;
 	    			}					
 				}
@@ -240,14 +230,40 @@ $mobileCTAiconBG: #d1d1d1;
 				    text-align: center;
     			}
 			}
-
-
-
 			@media (min-width: $mobileBreakpoint) {
 				background-color: transparent;
 			}
-
 		}
+	}
+}
+
+// HOME PAGE MOBILE HEADER VARIATIONS
+#homepage {
+	.spHeader {
+
+		&__info {
+			&__text {
+				flex-direction: column;
+    			justify-content: flex-end;
+
+				&__title {}
+				&__subtitle {
+					position: relative;
+					bottom: 2px;
+					right: 0;
+					padding-left: 2.5em;
+				}
+
+
+				@media (min-width: $mobileBreakpoint) {
+					flex-direction: row;
+					justify-content: center;
+				}
+
+
+			}
+		}
+
 	}
 }
 
