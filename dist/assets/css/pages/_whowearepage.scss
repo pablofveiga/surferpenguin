@@ -4,31 +4,93 @@
 	background-color: #fff;
 	border-top: 1px solid;
 
+	// TEMP FOR LAYOUTING
+	background-image: linear-gradient( 358.7deg,  rgba(42,136,157,1) 1.7%, rgba(122,197,214,1) 51.1%, rgba(211,232,242,1) 95.5% );
+
+
 	&__header  {
 		margin: 2em 0 0;
-
 
 		&__title {
 			font-size: 2em;
 			font-family: 'Berlin-Sans-FB-Regular';
+			color: $gray02;
 		}
-
-
 	}
 
-
 	&__content {
-		margin: 2em 0 4em;
+		// margin: 2em 0 4em;
+		padding: 1em 0;
 
 		&__text {
 
 			&__p {
 				margin: 0 0 10px;
+			    font-family: 'Berlin-Sans-FB-Regular';
+			    font-size: 1.15em;
+		    	line-height: 1.1;
+		    	color: $gray02;
 			}
 		}
 	}
 }
 
+
+.ourTeam {
+
+	&__item {
+		display: flex;
+		padding-top: 1em;
+		margin: 0 0 1em;
+    	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.48);
+
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+
+
+		&:nth-child(1) {
+			background-image: linear-gradient( 73.1deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
+		}
+		&:nth-child(2) {
+			background-image: linear-gradient(to top, #F9D423, #e65c00);
+		}
+		&:nth-child(3) {
+			background-image: linear-gradient(to top, #b68ada, #6441A5);
+		}
+		&:nth-child(4) {
+			background-image: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
+		}
+
+
+		&__pic {
+			max-width: 120px;
+		}
+
+
+		&__text {
+		    padding-top: 1.2em;
+		    text-align: center;
+
+			&__title {
+				font-family: 'Berlin-Sans-FB-Regular';
+    			font-size: 1.2em;
+			}
+
+			&__box {
+
+				&__line {
+				    font-family: 'Berlin-Sans-FB-Regular';
+				    font-size: 1em;
+				    line-height: 1.2;					
+				}
+			}
+		}
+	}
+}
+
+
+/*
 .penguinServices {
 
 	&__header {
@@ -84,3 +146,5 @@
 
 
 }
+
+*/
