@@ -54,13 +54,12 @@ $mobileCTAiconBG: #d1d1d1;
 
     	&__item {
 			font-family: 'Optician-Sans';
-			color: $gray01;
+			color: #fff;
 			font-size: 24px;
 			padding: 4px 8px;
 			@include transition01;
 
 			&.homeNavItem {
-
 				&:before {
 				    content: "";
 				    display: inline-block;
@@ -70,17 +69,23 @@ $mobileCTAiconBG: #d1d1d1;
 				    vertical-align: middle;
 				    margin: 0 3px 0 0;				}
 			}
-
 			&.active,
 			&:hover {
 		        color: $green04;
 			    background-color: #2f2f2f;
 			    @include transition01;
 			}
-
 			&--black {
 				color: #333;
 			}
+
+
+			@media (min-width: $mobileBreakpoint) {
+				color: $gray01;
+				font-size: 24px;
+				padding: 4px 8px;
+			}
+
     	}
 
     	&.opened {
@@ -98,9 +103,14 @@ $mobileCTAiconBG: #d1d1d1;
 
 		    	.spHeader__nav__item {
 				    border-bottom: 1px dashed #fff;
-				    padding: 8px 0;
+				    padding: 4px 0 4px 8px;
 				    margin: 0 0 23px;
-				    border-top: 1px dashed #fff;		    		
+				    border-top: 1px dashed #fff;	
+
+
+					@media (min-width: $mobileBreakpoint) {	    		
+						padding: 8px 0;
+					}
 		    	}
     	}
     	&--nude {
