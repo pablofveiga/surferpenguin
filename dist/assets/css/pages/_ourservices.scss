@@ -2,14 +2,20 @@
     position: relative;
     z-index: 100;
     border-top: 1px solid;
-    background-color: #fff;
-    
+    // background-color: #fff;
+
+	background: #649173;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+	    
 	&__header  {
 		padding: 0.5em 0 0;
 
 
 		&__title {
-			color: #000;
+			color: $gray02;
 			font-size: 2em;
 			text-align: center;
 		}
@@ -31,7 +37,12 @@
 
 
 	&__content {
-		padding: 2em 0 4em;
+		padding: 2em 0 1em;
+
+
+		@media (min-width: $mobileBreakpoint) {
+			padding: 2em 0 4em;			
+		}
 	}
 }
 
@@ -51,7 +62,8 @@
 	}
 
 	&__item {
-    	margin: 40px 0 0;
+    	// margin: 40px 0 0;
+    	margin: 0 0 40px;
 
 		&__header {
 			display: flex;
@@ -60,13 +72,13 @@
 			&__icon {
 			font-size: 42px;
 			display: block;
-			color: #333;			
+			color: $gray03;			
 			}
 
 			&__title {
 	    	    font-family: 'Optician-Sans';
 			    margin: 0 0 0 12px;
-			    color: #333;
+			    color: $gray03;
 			    font-size: 33px;
 
 			    @media (min-width: $mobileBreakpoint) {
@@ -93,7 +105,14 @@
 .affiliates {
 	position: relative;
 	z-index: 100;
-	background-color: #fff;
+	padding: 1em 0;
+	// background-color: #fff;
+
+background: #B993D6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 .ourAffiliates {
@@ -116,6 +135,7 @@
 				font-family: 'Berlin-Sans-FB-Regular';
 				color: $gray02;
 				font-size: 1.5em;
+				display: flex;
 			}
 		}
 
@@ -125,10 +145,22 @@
 		    justify-items: center;
 		    grid-gap: 1em 0;
 		    margin: 0.5em 0 0;
+
+		    @media (min-width: 540px) {
+		    	grid-template-columns: 1fr 1fr 1fr;
+		    }
+
+
+		    @media (min-width: 768px) {
+		    	display: flex;
+		    	flex-wrap: wrap;
+		    }
 		}
 	}
 }
 .affItem {
+	width: 100%;
+	text-align: center;
 
 	&__title {
 		font-family: 'Berlin-Sans-FB-Regular';
@@ -138,5 +170,31 @@
 	}
 	&__pic {
 		width: 90px;
+	}
+
+
+    @media (min-width: 768px) {
+    	width: 120px;
+    	margin: 6px;
+    }
+
+
+}
+
+.flagIcon {
+	width: 30px;
+	margin-right: 6px;
+
+	&--spain {
+		background: url(../pics/spain.png) center/contain no-repeat transparent;
+	}
+	&--mexico {
+		background: url(../pics/mexico.png) center/contain no-repeat transparent;
+	}
+	&--colombia {
+		background: url(../pics/colombia.png) center/contain no-repeat transparent;
+	}
+	&--peru {
+		background: url(../pics/peru.png) center/contain no-repeat transparent;
 	}
 }
