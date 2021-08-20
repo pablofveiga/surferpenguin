@@ -5,11 +5,13 @@
     background-color: #fff;
     
 	&__header  {
-		margin: 2em 0 0;
+		padding: 0.5em 0 0;
 
 
 		&__title {
 			color: #000;
+			font-size: 2em;
+			text-align: center;
 		}
 
 		&__subtitle {
@@ -18,11 +20,18 @@
 		    letter-spacing: -0.75px;
 		    margin: 4px 0 0;
 		}
+
+
+
+		@media (min-width: $mobileBreakpoint) {
+			padding: 2em 0 0;			
+		}
+
 	}
 
 
 	&__content {
-		margin: 2em 0 4em;
+		padding: 2em 0 4em;
 	}
 }
 
@@ -78,6 +87,50 @@
 			}
 		}
 	}
+}
 
+// AFFILIATES
+.ourAffiliates {
+	&__header {
+		&__title {
+			font-family: 'Berlin-Sans-FB-Regular';
+			font-size: 1.75em;
+			color: $gray02;
+		}
+	}
+}
+.penguinAffiliates {
+	&__section {
+		margin: 0 0 2em;
+		
+		&__header {
+			margin: 0.5em 0 0;
 
+			&__title {
+				font-family: 'Berlin-Sans-FB-Regular';
+				color: $gray02;
+				font-size: 1.5em;
+			}
+		}
+
+		&__content {
+		    display: grid;
+		    grid-template-columns: 1fr 1fr;
+		    justify-items: center;
+		    grid-gap: 1em 0;
+		    margin: 0.5em 0 0;
+		}
+	}
+}
+.affItem {
+
+	&__title {
+		font-family: 'Berlin-Sans-FB-Regular';
+		font-size: 1.1em;
+		color: $gray02;
+		text-align: center;
+	}
+	&__pic {
+		width: 90px;
+	}
 }

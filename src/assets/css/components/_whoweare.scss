@@ -55,7 +55,7 @@
 		margin: 20px auto ;
 
 		&__title {
-		    // color: #fff;
+		    color: $gray02;
 		    font-family: 'Berlin-Sans-FB-Regular';
 		    font-size: 48px;
 		    letter-spacing: 0.5px;
@@ -126,7 +126,7 @@
 			    // line-height: 21px;
 			    font-size: 1.3em;
 			    line-height: 1.15;
-			    color: #222;
+			    color: $gray02;
 
 			    @media (min-width: $mobileBreakpoint) {
 		        	margin: 0 0 20px 30px;		
