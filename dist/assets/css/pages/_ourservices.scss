@@ -90,6 +90,12 @@
 }
 
 // AFFILIATES
+.affiliates {
+	position: relative;
+	z-index: 100;
+	background-color: #fff;
+}
+
 .ourAffiliates {
 	&__header {
 		&__title {
@@ -102,7 +108,7 @@
 .penguinAffiliates {
 	&__section {
 		margin: 0 0 2em;
-		
+
 		&__header {
 			margin: 0.5em 0 0;
 
