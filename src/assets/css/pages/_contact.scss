@@ -1,15 +1,16 @@
 .contacUsPage {
 	position: relative;
 	z-index: 100;
-	background-color: #fff;
+	// background-color: #fff;
 	border-top: 1px solid;
+	background-image: radial-gradient( circle 911px at 0.4% 50.5%,  rgba(187,68,48,1) 18.7%, rgba(21,30,33,1) 90% );
     
 	&__header  {
 		margin: 1em 0 0;
 
 
 		&__title {
-			color: #000;
+			color: gold;
 			font-size: 3.3em;
     		line-height: 0.8;
     		text-align: center;
@@ -25,7 +26,18 @@
 
 
 	&__content {
-		margin: 2em 0 4em;
+		padding: 2em 0 4em;
+
+		&__introText {
+
+			&__line {
+			    font-family: 'Berlin-Sans-FB-Regular';
+			    font-size: 1.3em;
+			    line-height: 0.95;
+			    margin: 0 0 0.5em;
+			    color: $white02;				
+			}
+		}
 	}
 
 }
