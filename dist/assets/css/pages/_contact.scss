@@ -5,11 +5,14 @@
 	border-top: 1px solid;
     
 	&__header  {
-		margin: 2em 0 0;
+		margin: 1em 0 0;
 
 
 		&__title {
 			color: #000;
+			font-size: 3.3em;
+    		line-height: 0.8;
+    		text-align: center;
 		}
 
 		&__subtitle {
@@ -31,11 +34,13 @@
 	display: flex;
 	flex-direction: column;
 	margin: 20px 0 0;
+	background-color: $gray04;
 
 	&__row {
 		display: flex;
 		flex-direction: column;
 		margin: 0 0 20px;
+		padding: 0.8em 0.8em 0;
 
 		&--inline {
 			flex-direction: row;
@@ -65,6 +70,8 @@
 	&__label {
 		font-size: 16px;
 		margin: 0 0 5px;
+		color: $white;
+		font-family: 'Optician-Sans';
 
 		&--legal {
 		    margin: 0 0 0 4px;
@@ -96,38 +103,43 @@
 	    border: 0;
 	    min-height: 90px;
 	}
-	&__fieldset {
-		display: flex;
-		flex-direction: column;
+	// &__fieldset {
+	// 	display: flex;
+	// 	flex-direction: column;
 
 
 
-		&__legend {
-			margin: 0 0 14px;
-		}
+	// 	&__legend {
+	// 		margin: 0 0 14px;
+	// 		color: $white;
+	// 		font-family: 'Optician-Sans';
+	// 	}
 
-		&__item {
-			padding-left: 12px;
-			display: flex;
-			align-items: center;
-			margin: 0 0 14px;
+	// 	&__item {
+	// 		padding-left: 12px;
+	// 		display: flex;
+	// 		align-items: center;
+	// 		margin: 0 0 14px;
 
-			&__check {
-				cursor: pointer;
-			}
-			&__label {
-			    font-size: 15px;
-			    margin: 0 0 0 6px;
-			    cursor: pointer;			
-			}
-			&__wrapper {
+	// 		&__check {
+	// 			cursor: pointer;
+	// 		}
+	// 		&__label {
+	// 		    margin: 0 0 0 6px;
+	// 		    cursor: pointer;	
+	// 		    color: $white;		
+	// 	        font-family: 'Berlin-Sans-FB-Regular';
+	// 		    letter-spacing: 0.75px;
+	// 		    font-size: 0.9em;
+	// 		}
+	// 		&__wrapper {
 
-				@media (min-width: $mobileBreakpoint) {
-					display: flex;
-				}
-			}
-		}
-	}
+	// 			@media (min-width: $mobileBreakpoint) {
+	// 				display: flex;
+	// 			}
+	// 		}
+	// 	}
+	// }
 	&__CTA {
 		margin: 1em auto 0;
 		display: block;
