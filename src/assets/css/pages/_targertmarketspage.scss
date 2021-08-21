@@ -1,0 +1,150 @@
+.tmIntro {
+	background: url(../pics/tmbg2.jpg) center/cover no-repeat transparent;
+
+	&__header {
+		padding: 1em 0 0;
+
+		&__title {
+		    font-family: 'Optician-Sans';
+		    color: $white02;
+		    letter-spacing: -0.5px;
+		    line-height: 0.85;
+		    text-align: center;
+		    font-size: 1.75em;
+		}
+
+		&__flags {
+			display: flex;
+			justify-content: space-around;
+			padding: 1em 0 0;
+
+			&__item {
+				width: 36px;
+				height: 36px;
+
+			}
+		}
+	}
+
+	&__text {
+		padding: 1.5em 0 2em;
+
+		&__line {
+		    color: $white02;
+		    font-family: $font01;
+		    font-size: 1.3em;
+		    line-height: 1.12;
+		    letter-spacing: 0.5px;
+		}
+	}
+}
+
+
+
+
+// AFFILIATES
+.affiliates {
+	position: relative;
+	z-index: 100;
+	padding: 1em 0;
+	// background-color: #fff;
+
+
+
+background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+
+}
+
+.ourAffiliates {
+	&__header {
+		&__title {
+			font-family: 'Berlin-Sans-FB-Regular';
+			font-size: 1.75em;
+			color: $white;
+		}
+	}
+
+	&__content {
+		padding: 1em 0 0;
+	}
+}
+.penguinAffiliates {
+	&__section {
+		margin: 0 0 2em;
+
+		&__header {
+			margin: 0.5em 0 0;
+
+			&__title {
+				font-family: 'Berlin-Sans-FB-Regular';
+				color: $white02;
+				font-size: 1.5em;
+				display: flex;
+			}
+		}
+
+		&__content {
+		    display: grid;
+		    grid-template-columns: 1fr 1fr;
+		    justify-items: center;
+		    grid-gap: 1em 0;
+		    margin: 0.5em 0 0;
+
+		    @media (min-width: 540px) {
+		    	grid-template-columns: 1fr 1fr 1fr;
+		    }
+
+
+		    @media (min-width: 768px) {
+		    	display: flex;
+		    	flex-wrap: wrap;
+		    }
+		}
+	}
+}
+.affItem {
+	width: 100%;
+	text-align: center;
+
+	&__title {
+		font-family: 'Berlin-Sans-FB-Regular';
+		font-size: 1.1em;
+		color: $white02;
+		text-align: center;
+	}
+	&__pic {
+		width: 90px;
+	}
+
+
+    @media (min-width: 768px) {
+    	width: 120px;
+    	margin: 6px;
+    }
+
+
+}
+
+.flagIcon {
+	width: 30px;
+	margin-right: 6px;
+
+	&--spain {
+		background: url(../pics/spain.png) center/contain no-repeat transparent;
+	}
+	&--mexico {
+		background: url(../pics/mexico.png) center/contain no-repeat transparent;
+	}
+	&--colombia {
+		background: url(../pics/colombia.png) center/contain no-repeat transparent;
+	}
+	&--peru {
+		background: url(../pics/peru.png) center/contain no-repeat transparent;
+	}
+	&--brazil {
+		background: url(../pics/brazil.png) center/contain no-repeat transparent;
+	}
+	&--chile {
+		background: url(../pics/chile.png) center/contain no-repeat transparent;
+	}
+}
