@@ -26,6 +26,15 @@
 	background: url(../pics/tmbg2.jpg) center/cover no-repeat transparent;
     position: relative;
     z-index: 100;
+	
+
+	// PARA EL PARALLAX
+	// background-image: url(../pics/tmbg2.jpg);
+	// background-repeat: no-repeat;
+	// background-attachment: fixed;
+
+
+
 
 	&__header {
 		padding: 1em 0 0;
