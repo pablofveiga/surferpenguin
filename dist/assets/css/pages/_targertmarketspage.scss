@@ -1,5 +1,31 @@
+.flagIcon {
+	width: 30px;
+	margin-right: 6px;
+
+	&--spain {
+		background: url(../pics/spain.png) center/contain no-repeat transparent;
+	}
+	&--mexico {
+		background: url(../pics/mexico.png) center/contain no-repeat transparent;
+	}
+	&--colombia {
+		background: url(../pics/colombia.png) center/contain no-repeat transparent;
+	}
+	&--peru {
+		background: url(../pics/peru.png) center/contain no-repeat transparent;
+	}
+	&--brazil {
+		background: url(../pics/brazil.png) center/contain no-repeat transparent;
+	}
+	&--chile {
+		background: url(../pics/chile.png) center/contain no-repeat transparent;
+	}
+}
+
 .tmIntro {
 	background: url(../pics/tmbg2.jpg) center/cover no-repeat transparent;
+    position: relative;
+    z-index: 100;
 
 	&__header {
 		padding: 1em 0 0;
@@ -22,6 +48,11 @@
 				width: 36px;
 				height: 36px;
 
+
+				@media (min-width: $mobileBreakpoint) {
+					width: 90px;
+					height: 90px;
+				}
 			}
 		}
 	}
@@ -36,6 +67,12 @@
 		    line-height: 1.12;
 		    letter-spacing: 0.5px;
 		}
+	}
+
+
+
+	@media (min-width: $mobileBreakpoint) {
+	    background-attachment: fixed;
 	}
 }
 
@@ -125,26 +162,3 @@ background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 
 
 }
 
-.flagIcon {
-	width: 30px;
-	margin-right: 6px;
-
-	&--spain {
-		background: url(../pics/spain.png) center/contain no-repeat transparent;
-	}
-	&--mexico {
-		background: url(../pics/mexico.png) center/contain no-repeat transparent;
-	}
-	&--colombia {
-		background: url(../pics/colombia.png) center/contain no-repeat transparent;
-	}
-	&--peru {
-		background: url(../pics/peru.png) center/contain no-repeat transparent;
-	}
-	&--brazil {
-		background: url(../pics/brazil.png) center/contain no-repeat transparent;
-	}
-	&--chile {
-		background: url(../pics/chile.png) center/contain no-repeat transparent;
-	}
-}

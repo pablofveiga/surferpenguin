@@ -7,7 +7,7 @@
 
     
 	&__header  {
-		margin: 2em 0 0;
+		margin: 2em auto 0;
 
 
 		&__title {
@@ -87,6 +87,23 @@
 
 				.slick-list.draggable {
 					padding-left: 20px;
+
+
+					@media (min-width: $mobileBreakpoint) {
+						padding-left: 0;
+					}
+				}
+
+
+
+				@media (min-width: $mobileBreakpoint) {
+					width: 100%;
+				}
+
+				.slick-slide img {
+					@media (min-width: $mobileBreakpoint) {
+						max-width: 90%;
+					}					
 				}
 			}
 
