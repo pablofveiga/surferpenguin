@@ -72,13 +72,13 @@
 			&__icon {
 			font-size: 42px;
 			display: block;
-			color: $gray03;			
+			color: $white02;			
 			}
 
 			&__title {
 	    	    font-family: 'Optician-Sans';
 			    margin: 0 0 0 12px;
-			    color: $gray03;
+			    color: $white02;
 			    font-size: 33px;
 
 			    @media (min-width: $mobileBreakpoint) {
@@ -94,8 +94,9 @@
 
 			// SAMPLE LOREM IPSUM
 			p {
-				font-size: 16px;
+				font-size: 1em;
     			margin: 6px 0 0;
+    			color: $white02;
 			}
 		}
 	}

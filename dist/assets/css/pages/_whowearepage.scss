@@ -12,7 +12,8 @@
 
 
 	// PARA EL PARALLAX
-	background-image: url(../pics/dingli-degradado.jpg);
+	// background-image: url(../pics/dingli-degradado.jpg);
+	background-image: url(../pics/dingliyellow02.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
@@ -23,7 +24,12 @@
 		&__title {
 			font-size: 2em;
 			font-family: 'Berlin-Sans-FB-Regular';
-			color: $gray02;
+			color: $white;
+
+
+			@media (min-width: $mobileBreakpoint) {
+				font-size: 3.4em;
+			}
 		}
 	}
 
@@ -38,7 +44,13 @@
 			    font-family: 'Berlin-Sans-FB-Regular';
 			    font-size: 1.15em;
 		    	line-height: 1.1;
-		    	color: $gray02;
+		    	color: $white;
+
+
+				@media (min-width: $mobileBreakpoint) {
+					font-size: 1.4em;
+    				line-height: 1;
+				}
 			}
 		}
 	}
@@ -52,6 +64,7 @@
 		padding-top: 1em;
 		margin: 0 0 1em;
     	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.48);
+    	background-color: rgba(0, 0, 0, 0.76);
 
 		&:nth-child(even) {
 			flex-direction: row-reverse;
@@ -61,19 +74,23 @@
 			}
 		}
 
-
-		&:nth-child(1) {
-			background-image: linear-gradient( 73.1deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
-		}
-		&:nth-child(2) {
-			background-image: linear-gradient(to top, #F9D423, #e65c00);
-		}
-		&:nth-child(3) {
-			background-image: linear-gradient(to top, #b68ada, #6441A5);
-		}
-		&:nth-child(4) {
-			background-image: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
-		}
+		// OPTIONAL: COLOURIZED BACKGROÜNDS
+		// &:nth-child(1) {
+		// 	// background-image: linear-gradient( 73.1deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
+		// 	background-image: linear-gradient(0deg, #1a551a 8%, #14100d 86.9%);
+		// }
+		// &:nth-child(2) {
+		// 	// background-image: linear-gradient(to top, #F9D423, #e65c00);
+		// 	background-image: linear-gradient(to top, #3b3208, #512304);
+		// }
+		// &:nth-child(3) {
+		// 	// background-image: linear-gradient(to top, #b68ada, #6441A5);
+		// 	background-image: linear-gradient(to top, #291f32, #1a0c32);
+		// }
+		// &:nth-child(4) {
+		// 	// background-image: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
+		// 	background-image: linear-gradient(to top, #153222, #103d4f, #261c57);
+		// }
 
 
 		&__pic {
@@ -88,6 +105,7 @@
 			&__title {
 				font-family: 'Berlin-Sans-FB-Regular';
     			font-size: 1.2em;
+    			color: $yellow01;
 			}
 
 			&__box {
@@ -95,9 +113,23 @@
 				&__line {
 				    font-family: 'Berlin-Sans-FB-Regular';
 				    font-size: 1em;
-				    line-height: 1.2;					
+				    line-height: 1.2;
+				    color: $white02;		
+				    padding: 0 0.2em;
+				}
+
+
+				@media (min-width: $mobileBreakpoint) {
+					padding: 0.2em 0 0;	
 				}
 			}
+
+
+			@media (min-width: $mobileBreakpoint) {
+				padding-top: 0.5em;
+			}
+
+
 		}
 
 		@media (min-width: $mobileBreakpoint) {
@@ -105,7 +137,7 @@
 			width: 22%;
 			justify-content: center;
 			align-items: center;
-			min-height: 270px;
+			min-height: 240px;
 			border-radius: 2em;
     		padding: 0 1em;
 		}
@@ -121,63 +153,3 @@
 
 
 }
-
-
-/*
-.penguinServices {
-
-	&__header {
-		// display: flex;
-
-
-		&__icon {
-
-		}
-
-		&__title {
-
-		}
-	}
-
-	&__item {
-    	// margin: 40px 0 0;
-
-		&__header {
-			display: flex;
-			align-items: center;
-
-			&__icon {
-			font-size: 42px;
-			display: block;
-			color: #333;			
-			}
-
-			&__title {
-	    	    font-family: 'Optician-Sans';
-			    margin: 0 0 0 12px;
-			    color: #333;
-			    font-size: 33px;
-
-			    @media (min-width: $mobileBreakpoint) {
-			    	font-size: 43px;
-
-			    }
-			}
-
-		}
-
-		&__content {
-
-
-			// SAMPLE LOREM IPSUM
-			p {
-				font-size: 16px;
-    			margin: 6px 0 0;
-			}
-		}
-	}
-
-
-}
-
-*/
