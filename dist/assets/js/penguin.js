@@ -1,46 +1,43 @@
 function navigation() {
 	let triggers = $(".spHeader__nav__item");
+
 	triggers.click(function(event) {
+        var _id = $(this).attr("href");
+        var target = $(_id);
 
-
-	    var _id = $(this).attr("href");
-	    var target = $(_id);
-
-		    if (target.length) {
-		        event.preventDefault();
-		        $('html, body').animate({
-		            scrollTop: (target.offset().top)
-		        }, 1000, function() {
-		            var $target = $(target);
-		            $target.focus();
-		            if ($target.is(":focus")) {
-		                return false;
-		            } else {
-		                $target.attr('tabindex', '-1');
-		                $target.focus();
-		            };
-		        });
-		    }
-		    document.querySelector(".menuTrigger").classList.remove("cross");
-	   
-	    document.body.classList.remove("blocked");
-	    document.querySelector(".spHeader__nav").classList.remove("opened");
-	});	
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: (target.offset().top)
+            }, 1000, function() {
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) {
+                    return false;
+                } else {
+                    $target.attr('tabindex', '-1');
+                    $target.focus();
+                };
+            });
+        }
+        document.querySelector(".menuTrigger").classList.remove("cross");   
+        document.body.classList.remove("blocked");
+        document.querySelector(".spHeader__nav").classList.remove("opened");
+    });	
 }
 
 
 
-
-    // SCROLL TO TOP 
-    function scrollToTop(scrollDuration) {
-        var scrollStep = -window.scrollY / (scrollDuration / 15),
-            scrollInterval = setInterval(function(){
-            if ( window.scrollY != 0 ) {
-                window.scrollBy( 0, scrollStep );
-            }
-            else clearInterval(scrollInterval); 
-        },15);
-    }
+// SCROLL TO TOP 
+function scrollToTop(scrollDuration) {
+    var scrollStep = -window.scrollY / (scrollDuration / 15),
+        scrollInterval = setInterval(function(){
+        if ( window.scrollY != 0 ) {
+            window.scrollBy( 0, scrollStep );
+        }
+        else clearInterval(scrollInterval); 
+    },15);
+}
 
 
 

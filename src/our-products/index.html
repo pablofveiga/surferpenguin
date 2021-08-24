@@ -98,22 +98,24 @@
         <div class="ourProductsPage__wrapper">
             <div class="ourProductsPage__content">
 
-            <div class="kickflip">
-                <header class="ourProductsPage__header penguinHeader">
-                    <h2 class="ourProductsPage__header__title">Our Products</h2>
-                </header>
+                <div class="introProducts">
+                    <div class="kickflip">
+                        <header class="ourProductsPage__header penguinHeader">
+                            <h2 class="ourProductsPage__header__title">Our Products</h2>
+                        </header>
 
-                <div class="ourProductsPage__content__intro">
-                    <p class="ourProductsPage__content__intro__txt">Surferpenguin has four original products that cover different aspects, from casino games to sports betting.</p>
-                    <p class="ourProductsPage__content__intro__txt">On one of our YouTube channels we also talk about crypto in the betting world and the latest trends in the market.</p>
-                    <p class="ourProductsPage__content__intro__txt">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    </p>
+                        <div class="ourProductsPage__content__intro">
+                            <p class="ourProductsPage__content__intro__txt">Surferpenguin has four original products that cover different aspects, from casino games to sports betting.</p>
+                            <p class="ourProductsPage__content__intro__txt">On one of our YouTube channels we also talk about crypto in the betting world and the latest trends in the market.</p>
+                            <p class="ourProductsPage__content__intro__txt">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            </p>
+                        </div>
+                    </div>                    
                 </div>
-            </div>
- 
+
                 <div class="penguinProducts">
 
 
@@ -367,6 +369,22 @@ $('.penguinProducts__item__content__gallery').each(function() {
   });
 }); 
 
+
+// STICKY
+// let stickyConverter = function() {
+//     const stickyElement = document.querySelector(".introProducts ");
+//     const headerHeight = stickyElement.offsetHeight;
+//     const mobileViewport = 991;
+//     if (window.innerWidth > mobileViewport) {
+//         let scrollTop = window.scrollY;
+//         if (scrollTop > headerHeight) {
+//             stickyElement.classList.add("stickyPart");
+//         } else {
+//             stickyElement.classList.remove("stickyPart");
+//         }    
+//     }
+// }
+// window.addEventListener("scroll", stickyConverter);   
 </script>
 
 </html>

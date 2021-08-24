@@ -64,6 +64,8 @@
 				}
 			}
 		}
+
+
 	}
 
 	&__text {
@@ -127,6 +129,20 @@ background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 
 				font-size: 1.5em;
 				display: flex;
 			}
+
+			&__intro {
+			    padding-top: 0.5em;
+			    
+				&__line {
+					color: $white02;
+					margin: 0 0 0.35em;
+
+					strong {
+						color: $yellow01;;
+					}
+				}
+			}
+
 		}
 
 		&__content {
