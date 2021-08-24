@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Whoe We Are - Surferpenguin - Cool & Fresh Content Providers</title>
+    <title>Who We Are - Surferpenguin - Cool & Fresh Content Providers</title>
 
 
     <!-- TODO SEO ON PAGE -->
@@ -156,6 +156,98 @@
 
         <section class="kickflip whoWeArePage__wrapper">
             <header class="whoWeArePage__header">
+                <h2 class="whoWeArePage__header__title">Our Services</h2>
+            </header>
+            
+            <div class="whoWeArePage__content sfServices"> 
+                
+                <section class="penguinServices__item">
+                    <header class="penguinServices__item__header">
+                        <i class="fa fa-cogs penguinServices__item__header__icon " aria-hidden="true"></i>
+                        <h3 class="penguinServices__item__header__title">Web Business</h3>                            
+                    </header>
+                    <div class="penguinServices__item__content">
+                        <p class="">Unerstand UX signals to put all together and give final user good tools to compare and find best material / content</p>                            
+                    </div>
+                </section>
+
+
+                <section class="penguinServices__item">
+                    <header class="penguinServices__item__header">
+                        <i class="fa fa-cloud penguinServices__item__header__icon" aria-hidden="true"></i>
+                        <h3 class="penguinServices__item__header__title">Cloud Servers</h3>
+                    </header>
+                    <div class="penguinServices__item__content">
+                        <p class="">Always working with the best peroforming servers and latest technologies</p>                            
+                    </div>
+                </section>
+
+
+                <section class="penguinServices__item">
+                    <header class="penguinServices__item__header">
+                        <i class="fa fa-map-marker penguinServices__item__header__icon" aria-hidden="true"></i>
+                        <h3 class="penguinServices__item__header__title">GEO Targeting IPS</h3>
+                    </header>
+                    <div class="penguinServices__item__content">
+                        <p class="">Switch content depending on Geo IP to give the best material per country, we will focus on LATAM markets</p>                            
+                    </div>
+                </section>
+
+
+                <section class="penguinServices__item">
+                    <header class="penguinServices__item__header">
+                        <i class="fa fa-graduation-cap penguinServices__item__header__icon" aria-hidden="true"></i>
+                        <h3 class="penguinServices__item__header__title">Web Experts</h3>
+                    </header>
+                    <div class="penguinServices__item__content">
+                        <p class="">In order to be one of the best affiliates sites we have the best devs and techs with a lot of years of expertese on this business</p>                            
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+            <div class="ourServices__content servicesPage__content kickflip">
+      
+                <div class="penguinServices">
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="kickflip whoWeArePage__wrapper">
+            <header class="whoWeArePage__header">
                 <h2 class="whoWeArePage__header__title">Surferpenguin on Media</h2>
             </header>
             
@@ -186,4 +278,21 @@
 
 <script src="../assets/js/penguin.js"></script>
 
+
+<script>
+$(document).ready(function(){
+    if ($( window ).width() > 990) {
+        $(window).scroll(function(){
+            var barra = $(window).scrollTop();
+            var posicion =  (barra * 0.60);
+            
+            $('.whoWeArePage').css({
+                'background-position': '0 -' + posicion + 'px'
+            });
+
+        });
+    }
+
+});    
+</script>
 </html>

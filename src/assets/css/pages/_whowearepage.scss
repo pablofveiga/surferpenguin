@@ -6,7 +6,15 @@
 
 	// TEMP FOR LAYOUTING
 	// background-image: linear-gradient( 358.7deg,  rgba(42,136,157,1) 1.7%, rgba(122,197,214,1) 51.1%, rgba(211,232,242,1) 95.5% );
-	background: url(../pics/dingli-degradado.jpg) center no-repeat transparent;
+	
+
+	// background: url(../pics/dingli-degradado.jpg) center no-repeat transparent;
+
+
+	// PARA EL PARALLAX
+	background-image: url(../pics/dingli-degradado.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 
 
 	&__header  {
