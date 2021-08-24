@@ -3,8 +3,17 @@
 	z-index: 100;
 	// background-color: #fff;
 	border-top: 1px solid;
-	background-image: radial-gradient( circle 911px at 0.4% 50.5%,  rgba(187,68,48,1) 18.7%, rgba(21,30,33,1) 90% );
+	
+	// background-image: radial-gradient( circle 911px at 0.4% 50.5%,  rgba(187,68,48,1) 18.7%, rgba(21,30,33,1) 90% );
     
+
+	// background-image: url(../pics/penguingreen.jpg);
+	background-image: url(../pics/penguinblue.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+
+
 	&__header  {
 		margin: 1em 0 0;
 
@@ -46,7 +55,7 @@
 	display: flex;
 	flex-direction: column;
 	margin: 20px 0 0;
-	background-color: $gray04;
+	// background-color: $gray04;
 
 	&__row {
 		display: flex;
