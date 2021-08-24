@@ -59,9 +59,14 @@
 				color: #fff;
 				font-family: 'Optician-Sans';
 				font-size: 1.85em;
-				letter-spacing: -0.5px;
+				letter-spacing: -1.5px;
 				text-align: center;
 				margin: 0 0 0 8px;
+
+					@media (min-width: $mobileBreakpoint) {
+						letter-spacing: 0.5px;
+					}
+
 			}
 		}
 
