@@ -53,6 +53,10 @@
 			&__img {
 				display: block;
 				max-width: 50px;
+
+				@media (min-width: $mobileBreakpoint) {
+					max-width: 90px;
+				}
 			}
 
 			&__title {
@@ -80,13 +84,14 @@
 				&__line {
 					font-family: $font01;
 					color: $white02;
-					font-size: 1.2em;
+					font-size: 1.3em;
 					line-height: 1.15;
-					letter-spacing: 0.5px;
+					letter-spacing: 0.2px;
 					margin: 0 0 12px;
 
 					strong {
 						font-weight: 900;
+						font-size: 0.9em;
 					    letter-spacing: -0.5px;
 					    color: orange;
 					}
@@ -97,15 +102,6 @@
 				width: 90%;
 				margin: 1.2em auto 0;
 
-				.slick-list.draggable {
-					padding-left: 20px;
-
-
-					@media (min-width: $mobileBreakpoint) {
-						padding-left: 0;
-					}
-				}
-
 				.slick-slide img {
 					max-width: 240px;
 					margin: auto;
@@ -113,20 +109,18 @@
 					@media (min-width: $mobileBreakpoint) {
 						max-width: 100%;
 					}
-
 				}
-
-
 
 				@media (min-width: $mobileBreakpoint) {
 					width: 100%;
+					margin: 3.5em auto 0;
 				}
 
-				.slick-slide img {
-					@media (min-width: $mobileBreakpoint) {
-						max-width: 90%;
-					}					
-				}
+				// .slick-slide img {
+				// 	@media (min-width: $mobileBreakpoint) {
+				// 		max-width: 90%;
+				// 	}					
+				// }
 			}
 
 			&__link {
@@ -156,10 +150,13 @@
 			// background-image: linear-gradient(to bottom, #6840a8 0%, #806271 100%);
 		}
 		&:nth-child(3) {
-			background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+			// background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+			// background-image: linear-gradient(176deg, #334d48 0%, #cfbc71 100%);
+			background-image: linear-gradient(176deg, #334d48 0%, #6e6749 100%);
 		}
 		&:nth-child(4) {
-			background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+			// background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+			background-image: linear-gradient( 180deg,  rgba(214, 36, 18, 11.2), rgba(203,67,53,1) 91.1% );
 		}
 	}
 }
