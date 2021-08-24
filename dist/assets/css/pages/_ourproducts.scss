@@ -7,13 +7,17 @@
 
     
 	&__header  {
-		margin: 2em auto 0;
+		margin: 2em auto 0.5em;
 
 
 		&__title {
 			color: $yellow01;
 			font-family: $font01;
 			font-size: 2.3em;
+		}
+				
+		@media (min-width: $mobileBreakpoint) {
+			padding: 0 12px;
 		}
 
 	}
@@ -31,6 +35,7 @@
 				letter-spacing: 0.1px;
 				font-size: 1.4em;
 				line-height: 1.1;
+				margin: 0 0 0.35em;
 			}			
 		}
 
