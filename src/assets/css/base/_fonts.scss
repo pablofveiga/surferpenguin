@@ -27,3 +27,10 @@ body * {
 @font-face {font-family: "Poppins-Regular";
     src: url("../fonts/Poppins-Regular.woff2") format("woff2");
 }
+
+// #######################
+// FONTS VARIABLES
+$titleFont: "Berlin-Sans-FB-Regular";
+$textFont: "Poppins-Regular";
+$textFont--light: "Poppins-Light";
+$textFont--bold: "Poppins-Bold";

@@ -40,7 +40,7 @@
 		padding: 1em 0 0;
 
 		&__title {
-		    font-family: 'Optician-Sans';
+		    font-family: $font02;
 		    color: $white02;
 		    letter-spacing: -0.5px;
 		    line-height: 0.85;
@@ -106,7 +106,7 @@ background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 
 .ourAffiliates {
 	&__header {
 		&__title {
-			font-family: 'Berlin-Sans-FB-Regular';
+			font-family: $font01;
 			font-size: 1.75em;
 			color: $white;
 		}
@@ -124,7 +124,7 @@ background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 
 			margin: 0.5em 0 0;
 
 			&__title {
-				font-family: 'Berlin-Sans-FB-Regular';
+				font-family: $font01;
 				color: $white02;
 				font-size: 1.5em;
 				display: flex;
@@ -169,7 +169,7 @@ background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 
 	text-align: center;
 
 	&__title {
-		font-family: 'Berlin-Sans-FB-Regular';
+		font-family: $font01;
 		font-size: 1.1em;
 		color: $white02;
 		text-align: center;

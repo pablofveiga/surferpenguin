@@ -59,7 +59,7 @@ $color: ivory;
 			&__paragraph {
 				color: #fff;
 				// font-family: 'EastSeaDokdo-Regular';
-				font-family: 'Berlin-Sans-FB-Regular';
+				font-family: $font01;
 				font-size: 40px;
 				text-align: center;
 			}
@@ -121,7 +121,7 @@ $color: ivory;
 						color: #000;
 						background-color: #fff;
 						// box-shadow: 0 0 7px #000;
-						font-family: 'Optician-Sans';
+						font-family: $font02;
 						font-weight: 700;
 						height: 18px;
 					}

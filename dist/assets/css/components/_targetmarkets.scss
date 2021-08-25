@@ -28,7 +28,7 @@
 		&__intro {
 
 			&__text {
-			    font-family: 'Berlin-Sans-FB-Regular';
+			    font-family: $font01;
 			    font-size: 27px;
 			    font-style: italic;
 			    line-height: 28px;
@@ -70,7 +70,7 @@
 					&__name {
 					    text-align: center;
 					    background-color: ivory;
-					    font-family: 'Optician-Sans';
+					    font-family: $font02;
 					    position: absolute;
 					    width: 80%;
 					    left: 0;

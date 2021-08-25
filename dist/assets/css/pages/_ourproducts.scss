@@ -14,13 +14,6 @@
 
 		&__title {
 			color: $yellow01;
-			font-family: $font01;
-			font-size: 2.3em;
-
-			@media (min-width: $mobileBreakpoint) {
-				font-size: 4.3em;
-			}
-
 		}
 				
 		@media (min-width: $mobileBreakpoint) {
@@ -86,15 +79,15 @@
 
 			&__title {
 				color: $white;
-				font-family: 'Optician-Sans';
+				font-family: $font02;
 				font-size: 1.85em;
 				letter-spacing: -1.5px;
 				text-align: center;
 				margin: 0 0 0 8px;
 
 					@media (min-width: $mobileBreakpoint) {
-						letter-spacing: 0.5px;
-						font-size: 3em;
+						letter-spacing: -1.5px;
+						font-size: 6em;
 					}
 
 			}
@@ -154,7 +147,7 @@
 
 				&__cta {
 				    color: $blue01;
-				    font-family: 'Optician-Sans';
+				    font-family: $font02;
 				    display: inline-block;
 				    background-color: $white;
 				    padding: 4px;

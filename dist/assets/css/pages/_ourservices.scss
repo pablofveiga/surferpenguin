@@ -21,7 +21,7 @@
 		}
 
 		&__subtitle {
-		    font-family: 'Optician-Sans';
+		    font-family: $font02;
 		    font-size: 18px;
 		    letter-spacing: -0.75px;
 		    margin: 4px 0 0;
@@ -76,7 +76,7 @@
 			}
 
 			&__title {
-	    	    font-family: 'Optician-Sans';
+	    	    font-family: $font02;
 			    margin: 0 0 0 12px;
 			    color: $white02;
 			    font-size: 33px;

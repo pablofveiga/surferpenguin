@@ -17,5 +17,12 @@ $yellow01: gold;
 
 $blue01: #20a0e6;	// Para los botones o links
 
+
+
 // FONTS
-$font01: 'Berlin-Sans-FB-Regular';
+// $font01: 'Berlin-Sans-FB-Regular';
+$font02: 'Optician-Sans';
+$font03: "EastSeaDokdo-Regular";
+
+// OVERWRITING FONTS
+$font01: $textFont;

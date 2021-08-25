@@ -5,25 +5,27 @@
 
 // // // ==== LAYOUT ====
 @import "layout/_layout.scss";
-// @import "layout/_header.scss";
 
 // ========= HELPERS ===
 @import "helpers/_mixins.scss";		
 
 // // ==== COMPONENTES ====
 @import "components/_header.scss";
-@import "components/_whoweare.scss";
-@import "components/_whatwedo.scss";
-@import "components/_ourproducts.scss";
-@import "components/_ourservices.scss";
-@import "components/_targetmarkets.scss";
+// @import "components/_whoweare.scss";
+// @import "components/_ourservices.scss";
+// @import "components/_ourproducts.scss";
+// @import "components/_targetmarkets.scss";
+// @import "components/_whatwedo.scss";
 @import "components/_contact.scss";
+
+
 // @import "components/_footer.scss";
 // @import "components/_mainmenu.scss";
 // @import "components/_navigation.scss";
 // @import "components/_hexagonsGrid.scss";
 
 // // ==== PAGINAS ====
+@import "pages/_homepage.scss";
 @import "pages/_ourservices.scss";
 @import "pages/_ourproducts.scss";
 @import "pages/_contact.scss";
