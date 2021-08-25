@@ -22,13 +22,6 @@ $mobileCTAiconBG: #d1d1d1;
 	position: relative;
 	height: $headerMobileHeight;
 
-    @media (min-width: $mobileBreakpoint) {
-    	height: $headerDesktopHeight;
-    	padding-top: 0;
-    	box-shadow: none;
-        background-color: #d29139;
-   		background: url(../pics/black-linen.png),linear-gradient(to top, #5b574f, #6ad4bd);
-    }
 
     &__overlay {
     	position: absolute;
@@ -245,6 +238,27 @@ $mobileCTAiconBG: #d1d1d1;
 			}
 		}
 	}
+
+
+    @media (min-width: $mobileBreakpoint) {
+    	height: $headerDesktopHeight;
+    	padding-top: 0;
+    	box-shadow: none;
+        background-color: #d29139;
+   		background: url(../pics/black-linen.png),linear-gradient(to top, #5b574f, #6ad4bd);
+    }
+
+	&--nude {
+		background-color: transparent;
+		background: transparent;
+
+
+    	@media (min-width: $mobileBreakpoint) {
+			background-color: transparent;
+			background: transparent;    		
+    	}
+	}
+
 }
 
 // HOME PAGE MOBILE HEADER VARIATIONS
