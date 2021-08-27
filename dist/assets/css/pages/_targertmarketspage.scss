@@ -20,6 +20,13 @@
 	&--chile {
 		background: url(../pics/chile.png) center/contain no-repeat transparent;
 	}
+
+
+	@media (min-width: $mobileBreakpoint) {
+		width: 60px;
+		height: 60px;
+	    margin-right: 0.35em;
+	}
 }
 
 .tmIntro {
@@ -37,21 +44,26 @@
 
 
 	&__header {
-		padding: 1em 0 0;
+		padding: 2em 0 0;
 
 		&__title {
-		    font-family: $font02;
-		    color: $white02;
-		    letter-spacing: -0.5px;
-		    line-height: 0.85;
-		    text-align: center;
+		    font-family: $textFont;
 		    font-size: 1.75em;
+		    line-height: 1.15;
+		    letter-spacing: -0.5px;
+		    color: $white02;
+		    text-align: center;
 		}
 
 		&__flags {
 			display: flex;
 			justify-content: space-around;
 			padding: 1em 0 0;
+
+			@media (min-width: $mobileBreakpoint) {
+				padding: 3em 0 0;				
+			}
+
 
 			&__item {
 				width: 36px;
@@ -95,20 +107,30 @@
 	position: relative;
 	z-index: 100;
 	padding: 1em 0;
-	// background-color: #fff;
+	background-color: $blue02;
+
+	// background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
 
 
-
-background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
 
 }
 
 .ourAffiliates {
 	&__header {
 		&__title {
-			font-family: $font01;
-			font-size: 1.75em;
+			font-family: $titleFont;
+			font-size: 2.75em;
 			color: $white;
+
+			@media (min-width: $mobileBreakpoint) {
+			    font-size: 5.75em;
+			    text-align: center;
+			}
+
+		}
+
+		@media (min-width: $mobileBreakpoint) {
+		    margin: 2em 0 1em;
 		}
 	}
 
@@ -127,7 +149,14 @@ background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 
 				font-family: $font01;
 				color: $white02;
 				font-size: 1.5em;
+				font-weight: bold;
 				display: flex;
+
+				@media (min-width: $mobileBreakpoint) {
+				    font-size: 2.85em;
+				    margin: 0 0 0.25em;
+				    align-items: center;
+				}
 			}
 
 			&__intro {
@@ -136,6 +165,12 @@ background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 
 				&__line {
 					color: $white02;
 					margin: 0 0 0.35em;
+					font-family: $font01;
+
+
+					@media (min-width: $mobileBreakpoint) {
+						font-size: 1.3em;
+					}
 
 					strong {
 						color: $yellow01;;
@@ -147,7 +182,7 @@ background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 
 
 		&__content {
 		    display: grid;
-		    grid-template-columns: 1fr 1fr;
+		    grid-template-columns: 1fr 1fr 1fr;
 		    justify-items: center;
 		    grid-gap: 1em 0;
 		    margin: 1.25em 0 0;
@@ -168,14 +203,28 @@ background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 
 	width: 100%;
 	text-align: center;
 
-	&__title {
-		font-family: $font01;
-		font-size: 1.1em;
-		color: $white02;
-		text-align: center;
-	}
+	// &__title {
+	// 	font-family: $font01;
+	// 	font-size: 1.1em;
+	// 	color: $white02;
+	// 	text-align: center;
+	// }
 	&__pic {
-		width: 90px;
+		// width: 90px;
+		max-width: 90px;
+	    filter: grayscale(1);
+
+	    &:hover {
+	    	filter: none;
+	    }
+
+	    @media (min-width: 540px) {
+	    	max-width: 150px;
+	    }
+
+		@media (min-width: $mobileBreakpoint) {
+			max-width: 220px;
+		}
 	}
 
 
