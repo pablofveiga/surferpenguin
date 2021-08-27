@@ -188,11 +188,10 @@ $mobileCTAiconBG: #d1d1d1;
     				display: block;
     			}
 				&__part {
-					font-family: $font01;
+					font-family: $titleFont;
 					text-align: center;
 					font-weight: 900;
-					// color: $green04;
-					color: $white;
+					color: $orange02;
 				    display: inline-flex;
 					// margin: 0 0 0 8px;
 				    font-size: 32px;
@@ -200,8 +199,8 @@ $mobileCTAiconBG: #d1d1d1;
 
 	    			@media (min-width: $mobileBreakpoint) {
 						letter-spacing: 5px;
-						font-size: 90px;
-						line-height: 72px;
+						font-size: 7em;
+						line-height: 1;
 				    	text-shadow: 0 0 5px #000;
 	    			}					
 				}

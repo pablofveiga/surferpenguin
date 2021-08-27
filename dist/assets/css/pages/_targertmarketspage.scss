@@ -142,6 +142,10 @@
 	&__section {
 		margin: 0 0 2em;
 
+		@media (min-width: $mobileBreakpoint) {
+			margin: 0 0 4em;
+		}
+
 		&__header {
 			margin: 0.5em 0 0;
 
