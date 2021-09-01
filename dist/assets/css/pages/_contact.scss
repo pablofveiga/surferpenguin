@@ -169,3 +169,70 @@
 	}
 
 }
+
+
+// ULTIMA HORA
+.inputError {
+    position: absolute;
+    right: 50%;
+    color: red;
+    line-height: 1.65em;
+
+    &.msgError {
+    	padding-top: 5%;
+    }
+    @media (max-width: 768px) {    	
+	    font-size: 0.86em;
+	    line-height: 2em;
+	    right: 3em;
+    }
+}
+div.sentMsg {
+	opacity: 0;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	transition: all 0.5s ease-in;
+
+	&.visible {
+		opacity: 1;
+		width: auto;
+		height: auto;	
+		transition: all 0.5s ease-in;	
+	}
+}
+
+div.sentMsg p {
+    margin: 0.25em 0!important;
+    color: green;
+    font-size: 1.2em;
+}
+
+//  AJAX Gif y mensajes de exito o fracaso
+#contactResponse {
+    position: absolute;
+    display: flex;
+    right: 1em;
+    bottom: 5%;
+    align-items: center;
+
+	.hide{
+	    display: none;
+	}
+	.ajaxgif{
+		width: 16px;
+    	height: 16px;
+	}
+	.msg{
+		color: white;
+		margin-left: 5px;
+		padding: 3px 5px;
+		font-size: 0.85em;
+	}
+	.msg_ok{
+	    background: #589D05;
+	}
+	.msg_error{
+	    background: red;
+	}
+}

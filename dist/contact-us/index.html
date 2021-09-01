@@ -104,7 +104,7 @@
                 </div>
 
 
-                <form class="contactForm">
+                <form class="contactForm" id="form">
 
                     <div class="contactForm__row">
                         <label class="contactForm__label" for="cName">Name: </label>
@@ -127,9 +127,13 @@
                     </div>                    
 
                     <div class="contactForm__row contactForm__row--inline">    
-                        <input class="contactForm__input" type="checkbox" id="cAccept"></input>
+                        <input class="contactForm__input" required type="checkbox" id="cAccept"></input>
                         <label class="contactForm__label contactForm__label--legal" for="cAccept">I consent to Surferpenguin storing my personal data provided for the sole purpose of responding to my enquiry and administering my request.</label>
-                    </div>    
+                    </div>                      
+                    <div class="ultimo" id="contactResponse">
+                        <img src="../assets/pics/ajax.gif" class="ajaxgif hide" alt="Loading..." />
+                        <div class="msg"></div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -170,6 +174,61 @@ $(document).ready(function(){
     }
 
 });    
+</script>
+
+<script>
+// FORMULARIO
+// sendForm()    Formulario
+function sendForm() {
+    $(".contactForm__CTA").click(function(e) {
+        e.preventDefault();
+
+        var nombre = $("#cName").val();
+            email = $("#cEmail").val();
+            validacion_email = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+            mensaje = $("cMsg").val();
+
+        if (nombre == "") {
+            $("#cName").focus();
+            $("#cName").parent().prepend("<span class='inputError'>Please type a valid name</span>");
+            $(".inputError").fadeOut(3000);        
+            return false;
+        }else if(email == "" || !validacion_email.test(email)){
+            $("#cEmail").focus();    
+            $("#cEmail").parent().prepend("<span class='inputError'>Please type a valid email</span>");
+            $(".inputError").fadeOut(3000);
+            return false;
+        }else if(mensaje == ""){
+            $("cMsg").focus();        
+            $("cMsg").parent().prepend("<span class='inputError msgError'>Please write something</span>");
+            $(".inputError").fadeOut(3000);
+            return false;
+        }else{
+            $('.ajaxgif').removeClass('hide');
+            var datos = 'nombre='+ nombre + '&email=' + email + '&mensaje=' + mensaje;
+            $.ajax({
+                type: "POST",
+                url: "/contact-us/proceso.php",
+                data: datos,
+                success: function() {
+                    $('.ajaxgif').hide();
+                    $('.msg').text('Message sent!').addClass('msg_ok').fadeOut(5000);  
+                    $(".sentMsg").addClass("visible");
+                },
+                error: function() {
+                    $('.ajaxgif').hide();
+                    $('.msg').text('Something went wrong...').addClass('msg_error').fadeOut(5000);
+                }
+            });
+            document.getElementById("form").reset();
+            return false;
+        }
+    });
+}
+sendForm();
+
+
+    
 </script>
 
 

@@ -133,12 +133,29 @@ function scrollDetection() {
     })
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // LAUNCHER
 scrollDetection();
 mobileTrigger();
+navigation();
 
 
-	navigation();
+
 
 // if ( $(window).width() < 991 ) {
 
