@@ -105,4 +105,14 @@ p,h1,h2,h3,h4,h5,h6 {
 		line-height: 1;
 		letter-spacing: -0.5px;
 	}	
+
+
+	&--shorted {
+		letter-spacing: -3px;
+
+		@media (min-width: $mobileBreakpoint ) {
+			letter-spacing: -0.5px;	
+		}
+	}
+
 }
