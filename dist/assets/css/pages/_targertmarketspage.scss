@@ -121,7 +121,7 @@
 		&__title {
 			font-family: $titleFont;
 			font-size: 2.75em;
-			color: $white;
+			color: $orange02;
 
 			@media (min-width: $mobileBreakpoint) {
 			    font-size: 5.75em;
@@ -171,6 +171,7 @@
 					color: $white02;
 					margin: 0 0 0.35em;
 					font-family: $font01;
+					line-height: 1.2;
 
 
 					@media (min-width: $mobileBreakpoint) {
