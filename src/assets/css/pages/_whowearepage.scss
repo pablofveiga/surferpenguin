@@ -4,10 +4,10 @@ body#whoWeArePage {
 }
 .whoWeArePage {
 	position: relative;
+	padding: 0 0 2em;
 	z-index: 100;
-	background-color: #fff;
+	background-color: $white;
 	border-top: 1px solid;
-
 	// TEMP FOR LAYOUTING
 	// background-image: linear-gradient( 358.7deg,  rgba(42,136,157,1) 1.7%, rgba(122,197,214,1) 51.1%, rgba(211,232,242,1) 95.5% );
 	
@@ -46,7 +46,7 @@ body#whoWeArePage {
 
 				@media (min-width: $mobileBreakpoint) {
 					font-size: 1.4em;
-    				line-height: 1;
+    				line-height: 1.21;
 				}
 			}
 		}
@@ -70,25 +70,6 @@ body#whoWeArePage {
 				flex-direction: column;
 			}
 		}
-
-		// OPTIONAL: COLOURIZED BACKGROÜNDS
-		// &:nth-child(1) {
-		// 	// background-image: linear-gradient( 73.1deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
-		// 	background-image: linear-gradient(0deg, #1a551a 8%, #14100d 86.9%);
-		// }
-		// &:nth-child(2) {
-		// 	// background-image: linear-gradient(to top, #F9D423, #e65c00);
-		// 	background-image: linear-gradient(to top, #3b3208, #512304);
-		// }
-		// &:nth-child(3) {
-		// 	// background-image: linear-gradient(to top, #b68ada, #6441A5);
-		// 	background-image: linear-gradient(to top, #291f32, #1a0c32);
-		// }
-		// &:nth-child(4) {
-		// 	// background-image: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
-		// 	background-image: linear-gradient(to top, #153222, #103d4f, #261c57);
-		// }
-
 
 		&__pic {
 			max-width: 120px;
@@ -149,4 +130,54 @@ body#whoWeArePage {
 
 
 
+}
+
+.sfPress {
+
+	&__item {
+		display: flex;
+		background-color: $white;
+		padding: 10px;
+		border-radius: 2px;
+
+		&__pic {
+
+			&__link {
+				&__img {
+					display: block;
+					max-width: 200px;
+				}				
+			}
+
+		}
+
+		&__text {
+			margin-left: 10px;
+			display: inline-flex;
+			flex-direction: column;
+
+			&__title {
+
+				&__link {
+					color: $blue01;
+					font-family: $textFont--bold;
+					font-size: 1.1em;
+				}
+			}
+
+			&__desc {
+			    margin: 6px 0 0;
+			    font-family: $textFont;
+			    font-size: 0.9em;
+			    line-height: 1.12;
+			    color: $gray01;
+			}
+
+			&__cta {				
+			    font-family: $textFont;
+				color: $blue01;
+				margin: auto 0 5px;
+			}
+		}
+	}
 }
