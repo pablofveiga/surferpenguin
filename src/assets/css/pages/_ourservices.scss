@@ -29,9 +29,13 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 
 		&__title {
 			color: #2d2959;
-			font-size: 3.3em;
+			font-size: 1.3em;
 			text-align: center;
 			font-family: $textFont--bold;
+
+			@media (min-width: $mobileBreakpoint) {
+				font-size: 3.3em;			
+			}
 		}
 
 		&__subtitle {
@@ -117,9 +121,15 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 
 			&__title {
 				font-family: $textFont--bold;
-				font-size: 3.6em;
+				font-size: 2.1em;
 			    margin: 0 0.3em;
 			    color: $white;
+
+				@media (min-width: $mobileBreakpoint) {
+					font-size: 3.6em;
+				}
+
+
 			}
 		}
 
