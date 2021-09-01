@@ -109,7 +109,7 @@
 
 					strong {
 					    letter-spacing: -0.5px;
-					    color: $orange;
+					    color: $blue01;
 					}
 				}
 			}
@@ -135,19 +135,21 @@
 				text-align: center;
 
 				&__cta {
-				    color: $blue01;
+				    color: $orange02;
 				    font-family: $font02;
 				    font-size: 1.5em;
 				    display: inline-block;
 				    background-color: $white;
 				    padding: 0.5em;
 				    letter-spacing: -0.5px;
-				    box-shadow: 0 0 1px 3px $blue01 inset;
+				    box-shadow: 0 0 1px 3px $orange02 inset;
 
 					&:hover {
-					    background-color: $blue01;
+					    background-color: $orange02;
 					    color: $white;
-					    transition: all 0.3s ease-in;						
+					    transition: all 0.3s ease-in;
+				    	box-shadow: 0 0 1px 3px $white inset;
+
 					}
 
 					@media (min-width: $mobileBreakpoint) {
