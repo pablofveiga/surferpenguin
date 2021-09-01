@@ -108,19 +108,19 @@
 
                     <div class="contactForm__row">
                         <label class="contactForm__label" for="cName">Name: </label>
-                        <input class="contactForm__input" type="text" id="cName"></input>
+                        <input class="contactForm__input" type="text" id="cName" name="cName"></input>
                     </div>
 
 
                     <div class="contactForm__row">
                         <label class="contactForm__label" for="cEmail">Email: </label>
-                        <input class="contactForm__input" type="text" id="cEmail"></input>
+                        <input class="contactForm__input" type="text" id="cEmail" name="cEmail"></input>
                     </div>
 
 
                     <div class="contactForm__row messageBox">
                         <label class="contactForm__label" for="cMsg">Message: </label>
-                        <textarea class="contactForm__message" id="cMsg"></textarea>
+                        <textarea class="contactForm__message" id="cMsg" name="cMsg"></textarea>
                     </div>
                     <div class="contactForm__row">
                         <input type="submit" class="contactForm__CTA" name="sendMessage" value="Send">
@@ -186,7 +186,7 @@ function sendForm() {
         var nombre = $("#cName").val();
             email = $("#cEmail").val();
             validacion_email = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
-            mensaje = $("cMsg").val();
+            mensaje = $("#cMsg").val();
 
         if (nombre == "") {
             $("#cName").focus();
@@ -199,8 +199,8 @@ function sendForm() {
             $(".inputError").fadeOut(3000);
             return false;
         }else if(mensaje == ""){
-            $("cMsg").focus();        
-            $("cMsg").parent().prepend("<span class='inputError msgError'>Please write something</span>");
+            $("#cMsg").focus();        
+            $("#cMsg").parent().prepend("<span class='inputError msgError'>Please write something</span>");
             $(".inputError").fadeOut(3000);
             return false;
         }else{
@@ -208,7 +208,7 @@ function sendForm() {
             var datos = 'nombre='+ nombre + '&email=' + email + '&mensaje=' + mensaje;
             $.ajax({
                 type: "POST",
-                url: "/contact-us/proceso.php",
+                url: "https://sp.pablofv.com/contact-us/proceso.php",
                 data: datos,
                 success: function() {
                     $('.ajaxgif').hide();

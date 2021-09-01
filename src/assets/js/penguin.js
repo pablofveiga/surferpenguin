@@ -160,9 +160,3 @@ navigation();
 // if ( $(window).width() < 991 ) {
 
 // }
-
-
-// TESTS
-$(".whoWeAre__content__text__cta").click(function(){
-    $(".whoWeAre__content__hidden").toggleClass("visible");
-})

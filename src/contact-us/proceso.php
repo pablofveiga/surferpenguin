@@ -1,8 +1,8 @@
 <?php
 // Guardar los datos recibidos en variables:
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$mensaje = $_POST['mensaje'];
+$nombre = $_POST['cName'];
+$email = $_POST['cEmail'];
+$mensaje = $_POST['cMsg'];
 // Definir el correo de destino:
 $dest = "pablofveiga@gmail.com"; 
  
