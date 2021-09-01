@@ -33,7 +33,7 @@ $mobileCTAiconBG: #d1d1d1;
 	    width: 100%;
 	    top: 0;
 	    z-index: 1000;
-	    background-color: #f8f8f8;
+	    background-color: #242424;
     }
 
     &__nav {
@@ -43,6 +43,9 @@ $mobileCTAiconBG: #d1d1d1;
 
 		@media (min-width: $mobileBreakpoint) {
 			display: flex;
+		    height: 70px;
+    		align-items: center;
+    		justify-content: flex-end;
 		}
 
     	&__item {
@@ -64,19 +67,31 @@ $mobileCTAiconBG: #d1d1d1;
 			}
 			&.active,
 			&:hover {
-		        color: $green04;
-			    background-color: #2f2f2f;
+		        color: $orange02;
+			    // background-color: #2f2f2f;
 			    @include transition01;
 			}
 			&--black {
 				color: #333;
 			}
 
+			&:first-child {
+				@media (min-width: $mobileBreakpoint) {
+					margin-right: auto;
+				}
+
+			}
+
 
 			@media (min-width: $mobileBreakpoint) {
-				color: $gray01;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				// color: $gray01;
 				font-size: 24px;
-				padding: 4px 8px;
+				padding: 0.5em;
+				height: 100%;
+				letter-spacing: -1px;
 			}
 
     	}
@@ -126,6 +141,7 @@ $mobileCTAiconBG: #d1d1d1;
 			 grid-template-columns: 25% auto;
 			 grid-template-rows: $headerDesktopHeight;
 			// display: flex;
+			padding-top: 70px;
 		}
 		// MAYBE ON MQ
 		@at-root .fixedHomeInfo {
