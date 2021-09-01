@@ -125,7 +125,7 @@
 // OUR SERVICES SECTION
 .ourServices {
 	padding: 40px 0 70px;
-    min-height: 100vh;
+    // min-height: 100vh;
     background-color: aliceblue;
     position: relative;
     z-index: 100;
@@ -172,58 +172,59 @@
 	}
 }
 .servicesGrid {
-	@media (min-width: $mobileBreakpoint) {
-	    display: grid;
-	    grid-template-rows: 1fr 1fr;
-	    grid-template-columns: 1fr 1fr;
-	    grid-gap: 40px 0;
-	    margin: 60px auto 0;		
-	}
     &__item {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
 		flex-direction: column;
-		margin: 0 0 30px;
+		margin: 0 0 3em;
 
 		@media (min-width: $mobileBreakpoint) {
 			margin: 0;
 		}
 
 		&__icon {
-		    // font-size: 43px;
-		    // background-color: #4baafa;
-		    // display: block;
-		    width: 70px;
-		    // text-align: center;
-		    height: 70px;
-		    // line-height: 70px;
-		    // border-radius: 50%;
-		    // color: $white;
-		    // box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.53);				
-		    // grid-area: icon; 
+			display: block;
+			width: 80px;
+			height: 80px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
 
-		    &__overlay {
-		    	
-		    }
+			&__overlay {
+			    display: inline-flex;
+			    width: 100px;
+			    height: 100px;
+			    justify-content: center;
+			    align-items: center;
+			    border-radius: 50%;
+			    padding: 15px;
 
+			    // test
+			    background-color: $blue05;
+			}
 
 			&--webbusiness {
-				background-image: url(../pics/webbusiness.png); 
+				background-image: url(../pics/webbusiness-b.png); 
 			}
-
-
-
-			@media (min-width: $mobileBreakpoint) {
-			    // font-size: 90px;
-			    // width: 140px;
-			    // height: 140px;
-			    // line-height: 140px;				
+			&--dgmarkt {
+				background-image: url(../pics/dgmarkt-b.png); 
 			}
-
-
-
-
+			&--blockchain {
+				background-image: url(../pics/blockchain-b.png); 
+			}
+			&--cloud {
+				background-image: url(../pics/cloud-b.png); 
+			}
+			&--geotargeting {
+				background-image: url(../pics/geotargeting-b.png); 
+			}
+			&--webexperts {
+				background-image: url(../pics/webexperts-b.png); 
+			}
+			// &--XXXXX {
+			// 	background-image: url(../pics/XXXXX.png); 
+			// }
 
 		}
 
@@ -232,6 +233,7 @@
 		    font-size: 34px;
 		    margin: 6px auto 4px;
 		    grid-area: title; 
+		    color: $gray02;
 		}
 
 		&__description {
@@ -242,39 +244,27 @@
 		    grid-area: description; 
 
 			@media (min-width: $mobileBreakpoint) {
-		    	width: 70%;
+		    	// width: 70%;
 			}
 
 			&__p {
-				font-size: 19px;
-				line-height: 17px;
+				font-size: 1.1em;
+				line-height: 1.12;
 				font-weight: 100;
 				color: #303030;
-				font-family: $font02;
+				font-family: $textFont;
 			}
 		}
     }
-
-    // PAGE VERSION ???????
-    &--displayed {
-    	display: block;
-    
-    	section {
-    		display: block;
-    	}
-    }
-    // RULES FOR ELEMENTS ONLY PRESENT (OR DESCENT) IN DISPLAYED GRID
-    &__item {
-    	&__header {
-    		&__icon {
-			    font-size: 45px;
-			    width: 70px;
-			    height: 70px;
-			    line-height: 70px;
-    		}
-    	}
-    }
+	@media (min-width: $mobileBreakpoint) {
+	    display: grid;
+	    grid-template-rows: 1fr 1fr;
+	    grid-template-columns: 1fr 1fr 1fr;
+	    grid-gap: 40px 0;
+	    margin: 60px auto 0;		
+	}
 }
+
 .penguinServices {
 
 	&__header {

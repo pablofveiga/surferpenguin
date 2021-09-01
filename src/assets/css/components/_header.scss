@@ -93,18 +93,19 @@ $mobileCTAiconBG: #d1d1d1;
 		    box-shadow: 11px 0 35px 31px rgba(0, 0, 0, 0.75);
 		    left: 0;
 		    top: 0;    	
+		    padding: 2em 0 0;
 
-		    	.spHeader__nav__item {
-				    border-bottom: 1px dashed #fff;
-				    padding: 4px 0 4px 8px;
-				    margin: 0 0 23px;
-				    border-top: 1px dashed #fff;	
+	    	.spHeader__nav__item {
+			    border-bottom: 1px dashed #fff;
+			    padding: 0.3em 0 0.3em 1em;
+			    margin: 0 0 1em;
+			    border-top: 1px dashed #fff;	
 
 
-					@media (min-width: $mobileBreakpoint) {	    		
-						padding: 8px 0;
-					}
-		    	}
+				@media (min-width: $mobileBreakpoint) {	    		
+					padding: 0.5em 0;
+				}
+	    	}
     	}
     	&--nude {
     		box-shadow: none;

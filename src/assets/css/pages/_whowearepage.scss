@@ -139,6 +139,7 @@ body#whoWeArePage {
 		background-color: $white;
 		padding: 10px;
 		border-radius: 2px;
+		max-height: 130px;
 
 		&__pic {
 
@@ -171,6 +172,12 @@ body#whoWeArePage {
 			    font-size: 0.9em;
 			    line-height: 1.12;
 			    color: $gray01;
+			    display: none;
+
+				@media (min-width: $mobileBreakpoint) {
+					display: block;
+				}			    
+
 			}
 
 			&__cta {				
@@ -179,5 +186,10 @@ body#whoWeArePage {
 				margin: auto 0 5px;
 			}
 		}
+
+		@media (min-width: $mobileBreakpoint) {
+			max-height: initial;
+		}
+
 	}
 }
