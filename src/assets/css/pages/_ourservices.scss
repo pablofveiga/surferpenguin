@@ -4,9 +4,14 @@
     border-top: 1px solid;
     // background-color: #fff;
 
-	background: #649173;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to top, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to top, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	// background: #649173;  
+	// background: -webkit-linear-gradient(to top, #DBD5A4, #649173);
+	// background: linear-gradient(to top, #DBD5A4, #649173);
+
+
+background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 	    
@@ -46,60 +51,88 @@
 	}
 }
 
-.penguinServices {
 
-	&__header {
-		// display: flex;
-
-
-		&__icon {
-
-		}
-
-		&__title {
-
-		}
-	}
+.pServ {
 
 	&__item {
-    	// margin: 40px 0 0;
-    	margin: 0 0 40px;
+		margin: 0 0 3em;
 
 		&__header {
 			display: flex;
 			align-items: center;
 
 			&__icon {
-			font-size: 42px;
-			display: block;
-			color: $white02;			
+				display: block;
+				width: 60px;
+				height: 60px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+
+				&__overlay {
+				    display: inline-flex;
+				    width: 80px;
+				    height: 80px;
+				    justify-content: center;
+				    align-items: center;
+				    border-radius: 50%;
+				    padding: 15px;
+
+				    // test
+				    background-color: rebeccapurple;
+				}
+
+				&--webbusiness {
+					background-image: url(../pics/webbusiness-b.png); 
+				}
+				&--dgmarkt {
+					background-image: url(../pics/dgmarkt-b.png); 
+				}
+				&--blockchain {
+					background-image: url(../pics/blockchain-b.png); 
+				}
+				&--cloud {
+					background-image: url(../pics/cloud-b.png); 
+				}
+				&--geotargeting {
+					background-image: url(../pics/geotargeting-b.png); 
+				}
+				&--webexperts {
+					background-image: url(../pics/webexperts-b.png); 
+				}
+				// &--XXXXX {
+				// 	background-image: url(../pics/XXXXX.png); 
+				// }
+
 			}
 
 			&__title {
-	    	    font-family: $font02;
-			    margin: 0 0 0 12px;
-			    color: $white02;
-			    font-size: 33px;
-
-			    @media (min-width: $mobileBreakpoint) {
-			    	font-size: 43px;
-
-			    }
+				font-family: $textFont--bold;
+				font-size: 3.6em;
+			    margin: 0 0.3em;
+			    color: $white;
 			}
-
 		}
 
 		&__content {
 
-
-			// SAMPLE LOREM IPSUM
-			p {
-    			font-family: $font01;
-				font-size: 1.13em;
-    			color: $white02;
-    			margin: 0.35em 0 0;
+			&__txt {
+				font-family: $textFont;
+    			font-size: 1.34em;
+				color: $white;
+				margin: 0.5em 0 0;
 			}
 		}
+
+
+		&:nth-child(even) {
+			header {
+				flex-direction: row-reverse;
+			}
+			p {
+				text-align: right;
+			}
+		}
+
 	}
 }
-

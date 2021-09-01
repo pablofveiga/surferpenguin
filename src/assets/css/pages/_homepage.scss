@@ -259,6 +259,66 @@
     	}
     }
 }
+.penguinServices {
+
+	&__header {
+		// display: flex;
+
+
+		&__icon {
+
+			&--webbusiness {
+				background-image: url(../pics/webbusiness.png); 
+			}
+
+		}
+
+		&__title {
+
+		}
+	}
+
+	&__item {
+    	// margin: 40px 0 0;
+    	margin: 0 0 40px;
+
+		&__header {
+			display: flex;
+			align-items: center;
+
+			&__icon {
+			font-size: 42px;
+			display: block;
+			color: $white02;			
+			}
+
+			&__title {
+	    	    font-family: $font02;
+			    margin: 0 0 0 12px;
+			    color: $white02;
+			    font-size: 33px;
+
+			    @media (min-width: $mobileBreakpoint) {
+			    	font-size: 43px;
+
+			    }
+			}
+
+		}
+
+		&__content {
+
+
+			// SAMPLE LOREM IPSUM
+			p {
+    			font-family: $font01;
+				font-size: 1.13em;
+    			color: $white02;
+    			margin: 0.35em 0 0;
+			}
+		}
+	}
+}
 
 // OUR PRODUCTS SECTION
 .ourProducts {
