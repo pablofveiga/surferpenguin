@@ -109,16 +109,6 @@
 				margin: 60px auto;				
 			}
 		}
-
-		&__hidden {
-			display: none;
-			transition: all 0.5s ease-in;
-
-			&.visible {
-				display: block;
-				transition: all 0.5s ease-in;
-			}
-		}
 	}
 }
 
@@ -256,8 +246,16 @@
 			}
 		}
     }
-	@media (min-width: $mobileBreakpoint) {
+
+
+
+	@media (min-width: 650px) {
 	    display: grid;
+	    grid-template-columns: 1fr 1fr;
+	}
+
+
+	@media (min-width: $mobileBreakpoint) {
 	    grid-template-rows: 1fr 1fr;
 	    grid-template-columns: 1fr 1fr 1fr;
 	    grid-gap: 40px 0;

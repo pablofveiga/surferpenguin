@@ -20,24 +20,55 @@
 }
 
 
+// @mixin readButton {
+//     display: block;
+//     width: 100px;
+//     font-size: 13px;
+//     line-height: 27px;
+//     padding: 2px 0;
+//     border-radius: 5px;
+//     font-family: $font02;
+//     color: #000;
+//     margin: auto;
+//     text-align: center;
+//     background-color: $white02;
+//     box-shadow: 0 0 0px 2px #f15b00 inset;	
+
+//     @media (min-width: $mobileBreakpoint) {
+//         font-size: 20px;
+//         width: 150px;
+//         padding: 7px 0;     
+//     }
+// }
+
 @mixin readButton {
-    display: block;
-    width: 100px;
-    font-size: 13px;
-    line-height: 27px;
-    padding: 2px 0;
+    display: flex;
+    width: 160px;
+    font-size: 1.25em;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
     border-radius: 5px;
-    font-family: $font02;
-    color: #000;
-    margin: auto;
+    color: $orange03;
+    margin: 60px auto;
     text-align: center;
+    box-shadow: 0 0 0px 2px $orange03 inset;
+    font-family: $font02;
     background-color: $white02;
-    box-shadow: 0 0 0px 2px #f15b00 inset;	
+
+    &:hover {
+        transition: all 0.3s ease-in;
+        background-color: $orange03;
+        color: $white;
+    }
+
 
     @media (min-width: $mobileBreakpoint) {
-        font-size: 20px;
-        width: 150px;
+        font-size: 2em;
+        width: 250px;
         padding: 7px 0;     
+        letter-spacing: -1px;
+        color: $orange03;
     }
 }
 
