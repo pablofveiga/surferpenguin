@@ -48,7 +48,11 @@
 			    font-family: $font01;
 			    font-size: 1.3em;
 			    margin: 0 0 0.5em;
-			    color: $white02;				
+			    color: $white02;	
+
+			    @media (min-width:$mobileBreakpoint) {
+			    	text-align: center;
+			    }			
 			}
 		}
 	}

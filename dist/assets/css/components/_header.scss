@@ -76,6 +76,18 @@ $mobileCTAiconBG: #d1d1d1;
 			}
 
 			&:first-child {
+
+				&::before {
+					content: "";
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					background: url(../pics/logo03.svg) center no-repeat transparent;
+					background-size: cover;
+					margin-right: 5px;
+					vertical-align: middle;
+				}
+
 				@media (min-width: $mobileBreakpoint) {
 					margin-right: auto;
 				}
